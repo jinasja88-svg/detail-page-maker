@@ -155,7 +155,7 @@ class CoupangExtractor:
     ]
 
     async def extract(self, page, url: str) -> dict:
-        # 더보기 버튼 클릭
+        # 1. 더보기 버튼 클릭
         try:
             btn = await page.query_selector(
                 ".prod-description__toggle-btn, .product-detail-toggle-btn, button[class*='toggle']"
@@ -164,6 +164,17 @@ class CoupangExtractor:
                 await btn.click()
                 print("   [쿠팡] '상세페이지 더보기' 클릭")
                 await asyncio.sleep(2)
+                # 더보기 클릭 후 스크롤 → lazy-load 이미지 로딩
+                print("   [쿠팡] 상세 이미지 로딩 중 (스크롤)...")
+                total = await page.evaluate("document.body.scrollHeight")
+                pos = 0
+                while pos < total:
+                    pos += 600
+                    await page.evaluate(f"window.scrollTo(0, {pos})")
+                    await asyncio.sleep(0.3)
+                    total = await page.evaluate("document.body.scrollHeight")
+                await page.evaluate("window.scrollTo(0, 0)")
+                await asyncio.sleep(1)
         except Exception:
             pass
 
@@ -209,7 +220,7 @@ class NaverExtractor:
     ]
 
     async def extract(self, page, url: str) -> dict:
-        # 펼쳐보기 클릭
+        # 1. 펼쳐보기 클릭
         try:
             for btn in await page.query_selector_all("a, button"):
                 text = await btn.text_content() or ""
@@ -222,6 +233,11 @@ class NaverExtractor:
         except Exception:
             pass
 
+        # 2. 펼쳐진 후 스크롤 → lazy-load 이미지 전부 로딩
+        print("   [네이버] 상세 이미지 로딩 중 (스크롤)...")
+        await self._scroll_to_load(page)
+
+        # 3. 상세 영역 HTML 추출
         detail_html = ""
         for sel in self.DETAIL_SELECTORS:
             el = await page.query_selector(sel)
@@ -234,15 +250,49 @@ class NaverExtractor:
         if not detail_html:
             detail_html = await page.content()
 
+        # 4. HTML에서 이미지 추출
         soup = BeautifulSoup(detail_html, "html.parser")
         detail_images = []
         for img in soup.find_all("img"):
-            src = img.get("src") or img.get("data-src") or img.get("data-lazy-src")
+            src = img.get("src") or ""
+            # src가 base64 플레이스홀더면 data-src 사용
+            if src.startswith("data:"):
+                src = img.get("data-src") or img.get("data-lazy-src") or ""
+            elif not src:
+                src = img.get("data-src") or img.get("data-lazy-src") or ""
             if src:
                 full = urljoin(url, src)
                 if full.startswith("http"):
                     full = re.sub(r"\?type=\w+", "", full)
                     detail_images.append(full)
+
+        # 5. DOM에서도 직접 추출 (JS로 렌더된 이미지 포함)
+        dom_images = await page.evaluate("""
+            () => {
+                const imgs = [];
+                const selectors = [
+                    '.se-main-container img',
+                    '._se_component_area img',
+                    '#INTRODUCE img',
+                    'div[class*="detail"] img',
+                ];
+                for (const sel of selectors) {
+                    document.querySelectorAll(sel).forEach(img => {
+                        const src = img.src || img.dataset.src || img.dataset.lazySrc;
+                        if (src && src.startsWith('http')) imgs.push(src);
+                    });
+                    if (imgs.length > 0) break;
+                }
+                return imgs;
+            }
+        """)
+        # DOM에서 찾은 이미지 합치기 (중복 제거)
+        seen = set(detail_images)
+        for img_url in dom_images:
+            clean = re.sub(r"\?type=\w+", "", img_url)
+            if clean not in seen:
+                detail_images.append(clean)
+                seen.add(clean)
 
         # 메인 이미지
         main_images = []
@@ -252,6 +302,19 @@ class NaverExtractor:
                 main_images.append(re.sub(r"\?type=\w+", "", src))
 
         return {"detail_html": detail_html, "detail_images": detail_images, "main_images": main_images}
+
+    async def _scroll_to_load(self, page):
+        """펼쳐진 상세 영역을 천천히 스크롤하여 lazy-load 이미지를 전부 로딩한다."""
+        total = await page.evaluate("document.body.scrollHeight")
+        pos = 0
+        while pos < total:
+            pos += 600
+            await page.evaluate(f"window.scrollTo(0, {pos})")
+            await asyncio.sleep(0.4)
+            total = await page.evaluate("document.body.scrollHeight")
+        # 맨 위로
+        await page.evaluate("window.scrollTo(0, 0)")
+        await asyncio.sleep(1)
 
 
 class Cafe24Extractor:
@@ -359,9 +422,12 @@ class DetailPageCrawler:
                 elif "naver" in hl:
                     platform = "naver"
 
-            # 3. 스크롤 (lazy-load 이미지)
-            print("[3/4] 이미지 로딩...")
-            await self._scroll_page(page)
+            # 3. 스크롤 (카페24/기타만 - 네이버/쿠팡은 extractor 내부에서 펼치기 후 스크롤)
+            if platform not in ("naver", "coupang"):
+                print("[3/4] 이미지 로딩 (스크롤)...")
+                await self._scroll_page(page)
+            else:
+                print("[3/4] 스크롤은 추출 단계에서 처리")
 
             # 4. 이미지 추출
             print("[4/4] 이미지 추출...")
