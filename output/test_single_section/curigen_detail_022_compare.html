@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Curigen Detail 022 Compare</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap');
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #111; font-family: 'Noto Sans KR', sans-serif; padding: 24px; }
+  .compare { max-width: 1600px; margin: 0 auto; display: grid; grid-template-columns: 420px 1fr; gap: 24px; }
+  .panel { background: #fff; border-radius: 20px; overflow: hidden; box-shadow: 0 16px 40px rgba(0,0,0,.18); }
+  .panel-head { padding: 14px 18px; font-size: 14px; font-weight: 800; background: #1f1f1f; color: #fff; }
+  .ref-wrap { padding: 14px; background: #f3f3f3; }
+  .ref-wrap img { width: 100%; display: block; border-radius: 14px; }
+  .stage { padding: 34px; background: #f7f7f7; }
+  .artboard { width: 860px; min-height: 1320px; margin: 0 auto; border-radius: 18px; background: #fff; padding: 56px 54px; position: relative; overflow: hidden; }
+  .label { display: inline-block; padding: 6px 10px; background: #b8de9e; color: #fff; font-size: 18px; font-weight: 800; margin-bottom: 18px; }
+  .small { font-size: 42px; color: #383c41; letter-spacing: -.05em; margin-bottom: 10px; }
+  .big { font-size: 104px; line-height: .92; font-weight: 900; letter-spacing: -.08em; background: linear-gradient(90deg, #9bd377, #b259dd); -webkit-background-clip: text; background-clip: text; color: transparent; margin-bottom: 40px; }
+  .visual { position: relative; height: 680px; border-radius: 24px; background: linear-gradient(180deg, #ffffff 0%, #f4f4f4 100%); overflow: hidden; }
+  .circle { position: absolute; right: -120px; bottom: -180px; width: 620px; height: 620px; border-radius: 50%; background: linear-gradient(180deg, #fefefe, #e8e8e8); }
+  .bottle-shadow { position: absolute; left: 120px; top: 420px; width: 230px; height: 44px; border-radius: 50%; background: radial-gradient(circle, rgba(0,0,0,.18), transparent 72%); }
+  .dropper { position: absolute; left: 176px; top: 138px; width: 86px; height: 136px; border-radius: 42px 42px 18px 18px; background: linear-gradient(180deg, #ffffff, #efefef); }
+  .cap { position: absolute; left: 150px; top: 244px; width: 138px; height: 94px; border-radius: 10px; background: linear-gradient(90deg, #6c6c6c, #f7f7f7 36%, #9e9e9e 64%, #f0f0f0); }
+  .bottle { position: absolute; left: 102px; top: 320px; width: 236px; height: 284px; border-radius: 28px 28px 48px 48px; border: 3px solid rgba(188, 193, 197, .65); background: linear-gradient(180deg, #ffffff, #f4f6f8); }
+  .brand { position: absolute; left: 24px; top: 84px; color: #7c42a5; font-size: 48px; line-height: .92; font-weight: 900; letter-spacing: -.07em; }
+  .sub { position: absolute; left: 24px; top: 176px; color: #7c42a5; font-size: 18px; font-weight: 700; }
+  .green { position: absolute; left: 20px; right: 20px; bottom: 46px; background: #97cf2c; color: #fff; padding: 11px 14px; font-size: 24px; font-weight: 900; }
+  .toe { position: absolute; right: 58px; bottom: 60px; width: 420px; height: 360px; border-radius: 220px 220px 0 0; background: linear-gradient(180deg, #ffd1c4, #f4b4a5); transform: rotate(-5deg); }
+  .toe::before { content: ""; position: absolute; left: 210px; top: -12px; width: 92px; height: 108px; border-radius: 46px; background: #fff; box-shadow: inset 0 -8px 0 rgba(0,0,0,.03); }
+  .copy { margin-top: 24px; font-size: 34px; line-height: 1.45; font-weight: 900; letter-spacing: -.06em; color: #2f343a; }
+  .copy .grad { background: linear-gradient(90deg, #84bf52, #a844cf); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  [contenteditable]:hover { outline: 2px dashed #4fc3f7; outline-offset: 3px; }
+  [contenteditable]:focus { outline: 2px solid #4fc3f7; outline-offset: 3px; }
+</style>
+</head>
+<body>
+<div class="compare">
+  <div class="panel">
+    <div class="panel-head">Original Reference Curigen 022</div>
+    <div class="ref-wrap"><img src="../curigen_cafe24_com_b624375f/detail_images/detail_022.jpg" alt="curigen detail 022 original"></div>
+  </div>
+  <div class="panel">
+    <div class="panel-head">HTML Recreation Curigen 022</div>
+    <div class="stage">
+      <section class="artboard">
+        <div class="label">SOLUTION 01</div>
+        <div class="small" contenteditable="true">단 5분이면</div>
+        <div class="big" contenteditable="true">99.9%<br>유해균 전멸</div>
+        <div class="visual">
+          <div class="circle"></div>
+          <div class="dropper"></div>
+          <div class="cap"></div>
+          <div class="bottle-shadow"></div>
+          <div class="bottle">
+            <div class="brand">Curigen</div>
+            <div class="sub">Total Solution</div>
+            <div class="green">99.9%</div>
+          </div>
+          <div class="toe"></div>
+        </div>
+        <div class="copy" contenteditable="true"><span class="grad">검증된 살균력</span>의 큐리젠 솔루션을 만나보세요!</div>
+      </section>
+    </div>
+  </div>
+</div>
+</body>
+</html>

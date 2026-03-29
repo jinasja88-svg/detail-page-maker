@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Curigen Detail 013 Compare</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap');
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #111; font-family: 'Noto Sans KR', sans-serif; padding: 24px; }
+  .compare { max-width: 1600px; margin: 0 auto; display: grid; grid-template-columns: 420px 1fr; gap: 24px; }
+  .panel { background: #fff; border-radius: 20px; overflow: hidden; box-shadow: 0 16px 40px rgba(0,0,0,.18); }
+  .panel-head { padding: 14px 18px; font-size: 14px; font-weight: 800; background: #1f1f1f; color: #fff; }
+  .ref-wrap { padding: 14px; background: #f3f3f3; } .ref-wrap img { width: 100%; display: block; border-radius: 14px; }
+  .stage { padding: 34px; background: #f1f1f1; }
+  .artboard { width: 860px; min-height: 796px; margin: 0 auto; border-radius: 18px; background: #f4f4f4; padding: 74px 70px; text-align: center; }
+  .headline { font-size: 62px; color: #35393f; font-weight: 700; letter-spacing: -.06em; margin-bottom: 38px; }
+  .row { display: grid; grid-template-columns: 1fr 1fr 1fr; align-items: center; gap: 16px; margin-bottom: 46px; }
+  .box {
+    height: 190px; border-radius: 10px; background: #fff; display: flex; align-items: center; justify-content: center;
+    font-size: 94px; font-weight: 900; background-image: linear-gradient(90deg,#9ed47d,#ae76e6); -webkit-background-clip: text; background-clip: text; color: transparent;
+    position: relative; overflow: hidden;
+  }
+  .box.cross::after {
+    content: ''; position: absolute; width: 260px; border-top: 10px solid #ff4343; transform: rotate(-34deg);
+  }
+  .desc { font-size: 36px; line-height: 1.75; color: #4b5057; letter-spacing: -.05em; }
+  [contenteditable]:hover { outline: 2px dashed #4fc3f7; outline-offset: 3px; }
+  [contenteditable]:focus { outline: 2px solid #4fc3f7; outline-offset: 3px; }
+</style>
+</head>
+<body>
+<div class="compare">
+  <div class="panel">
+    <div class="panel-head">Original Reference Curigen 013</div>
+    <div class="ref-wrap"><img src="../curigen_cafe24_com_b624375f/detail_images/detail_013.jpg" alt="curigen detail 013 original"></div>
+  </div>
+  <div class="panel">
+    <div class="panel-head">HTML Recreation Curigen 013</div>
+    <div class="stage">
+      <section class="artboard">
+        <div class="headline" contenteditable="true">문제균 살균</div>
+        <div class="row">
+          <div class="box cross">1종?</div>
+          <div class="box cross">3종?</div>
+          <div class="box">5종!</div>
+        </div>
+        <div class="desc" contenteditable="true">문제균 5종에 대한 살균기술은<br>큐리젠이 특별한 이유입니다.</div>
+      </section>
+    </div>
+  </div>
+</div>
+</body>
+</html>

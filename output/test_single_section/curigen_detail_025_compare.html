@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Curigen Detail 025 Compare</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap');
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #111; font-family: 'Noto Sans KR', sans-serif; padding: 24px; }
+  .compare { max-width: 1600px; margin: 0 auto; display: grid; grid-template-columns: 420px 1fr; gap: 24px; }
+  .panel { background: #fff; border-radius: 20px; overflow: hidden; box-shadow: 0 16px 40px rgba(0,0,0,.18); }
+  .panel-head { padding: 14px 18px; font-size: 14px; font-weight: 800; background: #1f1f1f; color: #fff; }
+  .ref-wrap { padding: 14px; background: #f3f3f3; }
+  .ref-wrap img { width: 100%; display: block; border-radius: 14px; }
+  .stage { padding: 34px; background: #f2f2f2; }
+  .artboard { width: 860px; min-height: 1420px; margin: 0 auto; border-radius: 18px; background: linear-gradient(180deg, #fafafa 0%, #f3f3f3 100%); padding: 52px 54px 80px; position: relative; overflow: hidden; }
+  .marble::before, .marble::after {
+    content: ""; position: absolute; inset: 0;
+    background-image:
+      radial-gradient(circle at 8% 18%, rgba(180,180,180,.10) 0 2px, transparent 3px),
+      linear-gradient(115deg, transparent 0 28%, rgba(185,185,185,.18) 29%, transparent 31%, transparent 62%, rgba(185,185,185,.14) 63%, transparent 65%);
+    opacity: .55; pointer-events: none;
+  }
+  .tag { display: inline-block; padding: 6px 10px; background: #b7df9d; color: #fff; font-size: 18px; font-weight: 800; margin-bottom: 20px; position: relative; z-index: 1; }
+  .small { text-align: center; font-size: 34px; color: #4a4f56; letter-spacing: -.05em; margin-bottom: 10px; position: relative; z-index: 1; }
+  .headline { text-align: center; font-size: 76px; line-height: 1.1; font-weight: 900; letter-spacing: -.07em; color: #a447d3; margin-bottom: 52px; position: relative; z-index: 1; }
+  .hex-wrap { position: relative; width: 470px; height: 470px; margin: 0 auto; z-index: 1; }
+  .hex { position: absolute; inset: 0; clip-path: polygon(25% 6%, 75% 6%, 100% 50%, 75% 94%, 25% 94%, 0 50%); border: 3px solid #6eaf60; }
+  .line { position: absolute; background: rgba(170,170,170,.38); transform-origin: center; }
+  .line.h { left: 74px; right: 74px; top: 234px; height: 1px; }
+  .line.v { top: 58px; bottom: 58px; left: 234px; width: 1px; }
+  .line.d1 { left: 84px; top: 112px; width: 300px; height: 1px; transform: rotate(30deg); }
+  .line.d2 { left: 84px; top: 354px; width: 300px; height: 1px; transform: rotate(-30deg); }
+  .line.d3 { left: 84px; top: 354px; width: 300px; height: 1px; transform: rotate(30deg); }
+  .line.d4 { left: 84px; top: 112px; width: 300px; height: 1px; transform: rotate(-30deg); }
+  .product { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -44%); width: 160px; }
+  .dropper { width: 52px; height: 92px; margin: 0 auto; border-radius: 24px 24px 12px 12px; background: linear-gradient(180deg, #ffffff, #efefef); }
+  .cap { width: 82px; height: 62px; margin: -10px auto 0; border-radius: 8px; background: linear-gradient(90deg, #767676, #f7f7f7 36%, #989898 64%, #f0f0f0); }
+  .bottle { width: 160px; height: 198px; margin-top: -4px; border-radius: 24px 24px 36px 36px; background: linear-gradient(180deg, #ffffff, #f4f6f8); border: 2px solid rgba(188, 193, 197, .65); position: relative; }
+  .brand { position: absolute; left: 15px; top: 62px; color: #7c42a5; font-size: 31px; line-height: .92; font-weight: 900; letter-spacing: -.06em; }
+  .green { position: absolute; left: 13px; right: 13px; bottom: 30px; background: #97cf2c; color: #fff; padding: 8px 10px; font-size: 18px; font-weight: 900; text-align: center; }
+  [contenteditable]:hover { outline: 2px dashed #4fc3f7; outline-offset: 3px; }
+  [contenteditable]:focus { outline: 2px solid #4fc3f7; outline-offset: 3px; }
+</style>
+</head>
+<body>
+<div class="compare">
+  <div class="panel">
+    <div class="panel-head">Original Reference Curigen 025</div>
+    <div class="ref-wrap"><img src="../curigen_cafe24_com_b624375f/detail_images/detail_025.jpg" alt="curigen detail 025 original"></div>
+  </div>
+  <div class="panel">
+    <div class="panel-head">HTML Recreation Curigen 025</div>
+    <div class="stage">
+      <section class="artboard marble">
+        <div class="tag">SOLUTION 03</div>
+        <div class="small" contenteditable="true">부서짐·갈라짐·건조함까지</div>
+        <div class="headline" contenteditable="true">손발톱 케어를 완성하는<br>핵심 성분 6종</div>
+        <div class="hex-wrap">
+          <div class="hex"></div>
+          <div class="line h"></div>
+          <div class="line v"></div>
+          <div class="line d1"></div>
+          <div class="line d2"></div>
+          <div class="line d3"></div>
+          <div class="line d4"></div>
+          <div class="product">
+            <div class="dropper"></div>
+            <div class="cap"></div>
+            <div class="bottle">
+              <div class="brand">Curigen</div>
+              <div class="green">99.9%</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+</body>
+</html>

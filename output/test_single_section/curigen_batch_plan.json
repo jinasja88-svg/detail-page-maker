@@ -1,0 +1,269 @@
+{
+  "product_label": "Curigen",
+  "detail_count": 35,
+  "compare_count": 21,
+  "batch_size": 5,
+  "batch_count": 7,
+  "next_batch": "026-030",
+  "batches": [
+    {
+      "batch_number": 1,
+      "range": "001-005",
+      "status": "in_progress",
+      "items": [
+        {
+          "index": 1,
+          "image": "detail_001.jpg",
+          "compare_file": "curigen_detail_001_compare.html",
+          "done": false
+        },
+        {
+          "index": 2,
+          "image": "detail_002.jpg",
+          "compare_file": "curigen_detail_002_compare.html",
+          "done": false
+        },
+        {
+          "index": 3,
+          "image": "detail_003.jpg",
+          "compare_file": "curigen_detail_003_compare.html",
+          "done": false
+        },
+        {
+          "index": 4,
+          "image": "detail_004.gif",
+          "compare_file": "curigen_detail_004_compare.html",
+          "done": false
+        },
+        {
+          "index": 5,
+          "image": "detail_005.jpg",
+          "compare_file": "curigen_detail_005_compare.html",
+          "done": true
+        }
+      ]
+    },
+    {
+      "batch_number": 2,
+      "range": "006-010",
+      "status": "done",
+      "items": [
+        {
+          "index": 6,
+          "image": "detail_006.jpg",
+          "compare_file": "curigen_detail_006_compare.html",
+          "done": true
+        },
+        {
+          "index": 7,
+          "image": "detail_007.jpg",
+          "compare_file": "curigen_detail_007_compare.html",
+          "done": true
+        },
+        {
+          "index": 8,
+          "image": "detail_008.gif",
+          "compare_file": "curigen_detail_008_compare.html",
+          "done": true
+        },
+        {
+          "index": 9,
+          "image": "detail_009.jpg",
+          "compare_file": "curigen_detail_009_compare.html",
+          "done": true
+        },
+        {
+          "index": 10,
+          "image": "detail_010.jpg",
+          "compare_file": "curigen_detail_010_compare.html",
+          "done": true
+        }
+      ]
+    },
+    {
+      "batch_number": 3,
+      "range": "011-015",
+      "status": "done",
+      "items": [
+        {
+          "index": 11,
+          "image": "detail_011.jpg",
+          "compare_file": "curigen_detail_011_compare.html",
+          "done": true
+        },
+        {
+          "index": 12,
+          "image": "detail_012.jpg",
+          "compare_file": "curigen_detail_012_compare.html",
+          "done": true
+        },
+        {
+          "index": 13,
+          "image": "detail_013.jpg",
+          "compare_file": "curigen_detail_013_compare.html",
+          "done": true
+        },
+        {
+          "index": 14,
+          "image": "detail_014.jpg",
+          "compare_file": "curigen_detail_014_compare.html",
+          "done": true
+        },
+        {
+          "index": 15,
+          "image": "detail_015.gif",
+          "compare_file": "curigen_detail_015_compare.html",
+          "done": true
+        }
+      ]
+    },
+    {
+      "batch_number": 4,
+      "range": "016-020",
+      "status": "done",
+      "items": [
+        {
+          "index": 16,
+          "image": "detail_016.jpg",
+          "compare_file": "curigen_detail_016_compare.html",
+          "done": true
+        },
+        {
+          "index": 17,
+          "image": "detail_017.gif",
+          "compare_file": "curigen_detail_017_compare.html",
+          "done": true
+        },
+        {
+          "index": 18,
+          "image": "detail_018.jpg",
+          "compare_file": "curigen_detail_018_compare.html",
+          "done": true
+        },
+        {
+          "index": 19,
+          "image": "detail_019.jpg",
+          "compare_file": "curigen_detail_019_compare.html",
+          "done": true
+        },
+        {
+          "index": 20,
+          "image": "detail_020.jpg",
+          "compare_file": "curigen_detail_020_compare.html",
+          "done": true
+        }
+      ]
+    },
+    {
+      "batch_number": 5,
+      "range": "021-025",
+      "status": "done",
+      "items": [
+        {
+          "index": 21,
+          "image": "detail_021.jpg",
+          "compare_file": "curigen_detail_021_compare.html",
+          "done": true
+        },
+        {
+          "index": 22,
+          "image": "detail_022.jpg",
+          "compare_file": "curigen_detail_022_compare.html",
+          "done": true
+        },
+        {
+          "index": 23,
+          "image": "detail_023.jpg",
+          "compare_file": "curigen_detail_023_compare.html",
+          "done": true
+        },
+        {
+          "index": 24,
+          "image": "detail_024.jpg",
+          "compare_file": "curigen_detail_024_compare.html",
+          "done": true
+        },
+        {
+          "index": 25,
+          "image": "detail_025.jpg",
+          "compare_file": "curigen_detail_025_compare.html",
+          "done": true
+        }
+      ]
+    },
+    {
+      "batch_number": 6,
+      "range": "026-030",
+      "status": "pending",
+      "items": [
+        {
+          "index": 26,
+          "image": "detail_026.gif",
+          "compare_file": "curigen_detail_026_compare.html",
+          "done": false
+        },
+        {
+          "index": 27,
+          "image": "detail_027.jpg",
+          "compare_file": "curigen_detail_027_compare.html",
+          "done": false
+        },
+        {
+          "index": 28,
+          "image": "detail_028.jpg",
+          "compare_file": "curigen_detail_028_compare.html",
+          "done": false
+        },
+        {
+          "index": 29,
+          "image": "detail_029.jpg",
+          "compare_file": "curigen_detail_029_compare.html",
+          "done": false
+        },
+        {
+          "index": 30,
+          "image": "detail_030.jpg",
+          "compare_file": "curigen_detail_030_compare.html",
+          "done": false
+        }
+      ]
+    },
+    {
+      "batch_number": 7,
+      "range": "031-035",
+      "status": "pending",
+      "items": [
+        {
+          "index": 31,
+          "image": "detail_031.jpg",
+          "compare_file": "curigen_detail_031_compare.html",
+          "done": false
+        },
+        {
+          "index": 32,
+          "image": "detail_032.jpg",
+          "compare_file": "curigen_detail_032_compare.html",
+          "done": false
+        },
+        {
+          "index": 33,
+          "image": "detail_033.jpg",
+          "compare_file": "curigen_detail_033_compare.html",
+          "done": false
+        },
+        {
+          "index": 34,
+          "image": "detail_034.jpg",
+          "compare_file": "curigen_detail_034_compare.html",
+          "done": false
+        },
+        {
+          "index": 35,
+          "image": "detail_035.jpg",
+          "compare_file": "curigen_detail_035_compare.html",
+          "done": false
+        }
+      ]
+    }
+  ]
+}

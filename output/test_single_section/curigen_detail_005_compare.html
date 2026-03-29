@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Curigen Detail 005 Compare</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap');
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #111; font-family: 'Noto Sans KR', sans-serif; padding: 24px; }
+  .compare {
+    max-width: 1600px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 420px 1fr;
+    gap: 24px;
+    align-items: start;
+  }
+  .panel {
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 16px 40px rgba(0,0,0,.18);
+  }
+  .panel-head {
+    padding: 14px 18px;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: .02em;
+    background: #1f1f1f;
+    color: #fff;
+  }
+  .ref-wrap { padding: 14px; background: #f3f3f3; }
+  .ref-wrap img { width: 100%; display: block; border-radius: 14px; }
+  .stage { padding: 34px; background: #f4f6f2; }
+  .artboard {
+    width: 860px;
+    min-height: 1522px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 18px;
+    background:
+      radial-gradient(circle at 25% 16%, rgba(164, 224, 120, 0.45), transparent 22%),
+      radial-gradient(circle at 72% 25%, rgba(171, 122, 222, 0.28), transparent 24%),
+      linear-gradient(180deg, #fbfcf8 0%, #f4f7ef 28%, #dbe6be 78%, #b5c883 100%);
+  }
+  .brand-line {
+    text-align: center;
+    padding-top: 28px;
+    color: #8c939c;
+    font-size: 12px;
+    letter-spacing: .22em;
+  }
+  .brand-line::before,
+  .brand-line::after {
+    content: '';
+    display: inline-block;
+    width: 120px;
+    border-top: 1px solid rgba(120,130,140,.22);
+    vertical-align: middle;
+    margin: 0 12px;
+  }
+  .product-name {
+    margin-top: 34px;
+    text-align: center;
+    font-size: 68px;
+    line-height: 1.06;
+    letter-spacing: -.06em;
+    color: #58a253;
+    font-weight: 300;
+  }
+  .main-copy {
+    margin-top: 36px;
+    text-align: center;
+    font-size: 146px;
+    line-height: .88;
+    font-weight: 900;
+    letter-spacing: -.08em;
+    background: linear-gradient(135deg, #a6d97f 6%, #b776eb 76%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .main-copy span { display: block; }
+  .bottle-wrap {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 128px;
+    width: 360px;
+    margin: 0 auto;
+    height: 520px;
+  }
+  .shadow {
+    position: absolute;
+    bottom: 10px;
+    left: 66px;
+    width: 230px;
+    height: 54px;
+    background: radial-gradient(circle, rgba(69,61,58,.22), transparent 72%);
+  }
+  .dropper {
+    position: absolute;
+    left: 120px;
+    top: 0;
+    width: 124px;
+    height: 170px;
+    border-radius: 64px 64px 34px 34px;
+    background: linear-gradient(180deg, #ffffff 0%, #f4f4f4 100%);
+    box-shadow: inset 0 -12px 22px rgba(0,0,0,.06);
+  }
+  .cap {
+    position: absolute;
+    left: 92px;
+    top: 122px;
+    width: 180px;
+    height: 120px;
+    border-radius: 8px;
+    background: linear-gradient(90deg, #6f6f70 0%, #f6f6f7 22%, #9f9f9f 44%, #ffffff 56%, #858585 82%, #ececec 100%);
+  }
+  .glass-neck {
+    position: absolute;
+    left: 112px;
+    top: 224px;
+    width: 138px;
+    height: 34px;
+    border-radius: 16px;
+    background: rgba(255,255,255,.48);
+    border: 2px solid rgba(174,184,190,.35);
+  }
+  .bottle {
+    position: absolute;
+    left: 58px;
+    top: 246px;
+    width: 248px;
+    height: 240px;
+    border-radius: 20px 20px 50px 50px;
+    background:
+      linear-gradient(180deg, rgba(255,255,255,.9), rgba(240,244,247,.88)),
+      linear-gradient(180deg, rgba(255,255,255,.45), rgba(194,210,224,.15));
+    border: 3px solid rgba(185,196,204,.5);
+    box-shadow: inset -16px -18px 28px rgba(0,0,0,.04), inset 14px 10px 20px rgba(255,255,255,.9);
+  }
+  .liq-line {
+    position: absolute;
+    left: 62px;
+    top: 268px;
+    width: 240px;
+    height: 10px;
+    background: rgba(176,195,214,.34);
+    border-radius: 999px;
+  }
+  .label-top {
+    position: absolute;
+    left: 86px;
+    top: 314px;
+    width: 66px;
+    padding: 6px 8px;
+    border-radius: 999px;
+    background: #7b3f9c;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    text-align: center;
+  }
+  .label-main {
+    position: absolute;
+    left: 78px;
+    top: 346px;
+    width: 196px;
+    background: #fff;
+    padding: 12px 14px 0;
+    text-align: left;
+  }
+  .label-main .brand {
+    font-size: 56px;
+    line-height: .94;
+    color: #7b3f9c;
+    font-weight: 900;
+    letter-spacing: -.07em;
+  }
+  .label-main .plus {
+    float: right;
+    color: #8ec63f;
+    font-size: 44px;
+    margin-top: -46px;
+    font-weight: 900;
+  }
+  .label-main .sub {
+    font-size: 18px;
+    line-height: 1.05;
+    color: #7b3f9c;
+    font-weight: 700;
+    margin-top: 2px;
+  }
+  .label-purple {
+    position: absolute;
+    left: 78px;
+    top: 454px;
+    width: 196px;
+    background: linear-gradient(90deg, #7c3b98, #8e42aa);
+    color: #fff;
+    padding: 10px 14px;
+    font-size: 12px;
+    line-height: 1.65;
+    font-weight: 700;
+  }
+  .label-green {
+    position: absolute;
+    left: 78px;
+    top: 536px;
+    width: 196px;
+    background: #98cf2c;
+    color: #fff;
+    padding: 12px 14px;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 1;
+  }
+  .label-green small {
+    display: block;
+    font-size: 11px;
+    margin-top: 4px;
+    font-weight: 700;
+  }
+  .label-bottom {
+    position: absolute;
+    left: 78px;
+    top: 580px;
+    width: 196px;
+    text-align: center;
+    font-size: 24px;
+    color: #3c3c40;
+    font-weight: 500;
+  }
+  .hash {
+    position: absolute;
+    padding: 11px 18px;
+    border-radius: 999px;
+    background: rgba(255,255,255,.92);
+    box-shadow: 0 10px 24px rgba(59,63,69,.14);
+    color: #6f6f74;
+    font-size: 24px;
+    font-weight: 700;
+  }
+  .h1 { left: 126px; top: 1056px; }
+  .h2 { right: 106px; top: 1086px; }
+  .h3 { left: 104px; top: 1240px; }
+  [contenteditable]:hover { outline: 2px dashed #4fc3f7; outline-offset: 3px; }
+  [contenteditable]:focus { outline: 2px solid #4fc3f7; outline-offset: 3px; }
+</style>
+</head>
+<body>
+  <div class="compare">
+    <div class="panel">
+      <div class="panel-head">Original Reference Curigen 005</div>
+      <div class="ref-wrap"><img src="../curigen_cafe24_com_b624375f/detail_images/detail_005.jpg" alt="curigen detail 005 original"></div>
+    </div>
+    <div class="panel">
+      <div class="panel-head">HTML Recreation Curigen 005</div>
+      <div class="stage">
+        <section class="artboard">
+          <div class="brand-line" contenteditable="true">Curigen Total Solution</div>
+          <div class="product-name" contenteditable="true">큐리젠 토탈 솔루션</div>
+          <div class="main-copy" contenteditable="true">
+            <span>14차</span>
+            <span>완·판</span>
+          </div>
+
+          <div class="bottle-wrap">
+            <div class="shadow"></div>
+            <div class="dropper"></div>
+            <div class="cap"></div>
+            <div class="glass-neck"></div>
+            <div class="bottle"></div>
+            <div class="liq-line"></div>
+            <div class="label-top">의약외품</div>
+            <div class="label-main">
+              <div class="brand">Curigen</div>
+              <div class="plus">+</div>
+              <div class="sub">Total Solution</div>
+            </div>
+            <div class="label-purple">
+              □ HYDROLYZED KERATIN<br>
+              □ ALLANTOIN<br>
+              □ D-PANTHENOL
+            </div>
+            <div class="label-green">
+              99.9%
+              <small>antibacterial agent</small>
+            </div>
+            <div class="label-bottom">30 ml / 1.01 fl. oz.</div>
+          </div>
+
+          <div class="hash h1" contenteditable="true"># 손발톱 영양공급</div>
+          <div class="hash h2" contenteditable="true"># 살균·항균제품</div>
+          <div class="hash h3" contenteditable="true"># 의약외품</div>
+        </section>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

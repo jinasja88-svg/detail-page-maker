@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Curigen Detail 011 Compare</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap');
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #111; font-family: 'Noto Sans KR', sans-serif; padding: 24px; }
+  .compare { max-width: 1600px; margin: 0 auto; display: grid; grid-template-columns: 420px 1fr; gap: 24px; }
+  .panel { background: #fff; border-radius: 20px; overflow: hidden; box-shadow: 0 16px 40px rgba(0,0,0,.18); }
+  .panel-head { padding: 14px 18px; font-size: 14px; font-weight: 800; background: #1f1f1f; color: #fff; }
+  .ref-wrap { padding: 14px; background: #f3f3f3; } .ref-wrap img { width: 100%; display: block; border-radius: 14px; }
+  .stage { padding: 34px; background: #f3f6ee; }
+  .artboard {
+    width: 860px; min-height: 1474px; margin: 0 auto; border-radius: 18px; overflow: hidden;
+    background: radial-gradient(circle at 50% 28%, rgba(195, 234, 130, .36), transparent 34%), #f7f8ef;
+    position: relative; padding: 52px 54px 42px;
+  }
+  .copy { text-align: center; color: #2f3136; line-height: 1.45; letter-spacing: -.05em; }
+  .copy .l1 { font-size: 40px; font-weight: 500; }
+  .copy .l2 { font-size: 58px; font-weight: 900; margin-top: 10px; }
+  .copy .l3 { font-size: 58px; font-weight: 900; }
+  .copy .grad {
+    display: inline-block;
+    background: linear-gradient(90deg, #9fd47f, #b375e8);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .hand-area { position: relative; height: 650px; margin-top: 10px; }
+  .hand {
+    position: absolute; left: 126px; bottom: 0; width: 360px; height: 390px;
+    background: linear-gradient(180deg, #f8d0b0, #edb28f);
+    border-radius: 180px 180px 120px 120px;
+    transform: rotate(10deg);
+    box-shadow: 0 12px 28px rgba(155, 96, 61, .18);
+  }
+  .finger {
+    position: absolute; background: linear-gradient(180deg, #f8d0b0, #edb28f);
+    border-radius: 70px;
+    box-shadow: 0 8px 18px rgba(155, 96, 61, .14);
+  }
+  .f1 { left: 188px; bottom: 224px; width: 78px; height: 260px; transform: rotate(-8deg); }
+  .f2 { left: 250px; bottom: 236px; width: 80px; height: 286px; transform: rotate(5deg); }
+  .f3 { left: 320px; bottom: 228px; width: 80px; height: 270px; transform: rotate(16deg); }
+  .bottle {
+    position: absolute; right: 158px; bottom: 110px; width: 230px; height: 390px;
+  }
+  .dropper { position: absolute; left: 86px; top: 0; width: 60px; height: 110px; border-radius: 32px 32px 16px 16px; background: linear-gradient(180deg,#fff,#f2f2f2); }
+  .cap { position: absolute; left: 56px; top: 84px; width: 120px; height: 86px; border-radius: 8px; background: linear-gradient(90deg,#6f6f70,#f4f4f5 34%,#9b9b9b 64%,#ececec); }
+  .bodyb { position: absolute; left: 28px; top: 150px; width: 176px; height: 220px; border-radius: 24px 24px 44px 44px; border: 3px solid rgba(180,188,194,.5); background: linear-gradient(180deg,#ffffff,#f3f5f7); }
+  .label-top { position: absolute; left: 48px; top: 180px; width: 56px; padding: 5px 8px; border-radius: 999px; background: #7b3f9c; color: #fff; font-size: 11px; font-weight: 700; text-align: center; }
+  .label-main { position: absolute; left: 44px; top: 210px; width: 142px; text-align: left; }
+  .label-main .brand { font-size: 38px; line-height: .92; color: #7b3f9c; font-weight: 900; letter-spacing: -.08em; }
+  .label-main .sub { font-size: 16px; color: #7b3f9c; font-weight: 700; }
+  .label-green { position: absolute; left: 44px; top: 314px; width: 142px; background: #98cf2c; color: #fff; padding: 8px 10px; font-size: 22px; font-weight: 900; }
+  .note-box {
+    margin-top: 28px; background: #fff; border-radius: 22px; padding: 24px 28px; box-shadow: 0 12px 24px rgba(0,0,0,.06);
+  }
+  .note-box h3 { font-size: 28px; margin-bottom: 12px; color: #2f3136; }
+  .note-box p { font-size: 22px; line-height: 1.8; color: #5c6571; }
+  [contenteditable]:hover { outline: 2px dashed #4fc3f7; outline-offset: 3px; }
+  [contenteditable]:focus { outline: 2px solid #4fc3f7; outline-offset: 3px; }
+</style>
+</head>
+<body>
+<div class="compare">
+  <div class="panel">
+    <div class="panel-head">Original Reference Curigen 011</div>
+    <div class="ref-wrap"><img src="../curigen_cafe24_com_b624375f/detail_images/detail_011.jpg" alt="curigen detail 011 original"></div>
+  </div>
+  <div class="panel">
+    <div class="panel-head">HTML Recreation Curigen 011</div>
+    <div class="stage">
+      <section class="artboard">
+        <div class="copy">
+          <div class="l1" contenteditable="true">큐리젠 토탈 솔루션은</div>
+          <div class="l2" contenteditable="true">식약처로부터</div>
+          <div class="l3"><span class="grad" contenteditable="true">의약외품</span><span contenteditable="true">입니다.</span></div>
+        </div>
+        <div class="hand-area">
+          <div class="hand"></div>
+          <div class="finger f1"></div>
+          <div class="finger f2"></div>
+          <div class="finger f3"></div>
+          <div class="bottle">
+            <div class="dropper"></div>
+            <div class="cap"></div>
+            <div class="bodyb"></div>
+            <div class="label-top">의약외품</div>
+            <div class="label-main">
+              <div class="brand">Curigen</div>
+              <div class="sub">Total Solution</div>
+            </div>
+            <div class="label-green">99.9%</div>
+          </div>
+        </div>
+        <div class="note-box">
+          <h3 contenteditable="true">의약외품이란?</h3>
+          <p contenteditable="true">약사법으로 관리되는 질병의 치료, 예방 등과 관련된 제품을 지칭합니다.</p>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+</body>
+</html>
