@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Section 013 Compare</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap');
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:#111;font-family:'Noto Sans KR',sans-serif;padding:24px;color:#111}
+  .compare{max-width:1600px;margin:0 auto;display:grid;grid-template-columns:420px 1fr;gap:24px;align-items:start}
+  .panel{background:#fff;border-radius:20px;overflow:hidden;box-shadow:0 16px 40px rgba(0,0,0,.18)}
+  .panel-head{padding:14px 18px;font-size:14px;font-weight:800;letter-spacing:.02em;background:#1f1f1f;color:#fff}
+  .ref-wrap{padding:14px;background:#f3f3f3}.ref-wrap img{width:100%;display:block;border-radius:14px}
+  .stage{padding:34px;background:#f8f8f6}
+  .artboard{width:860px;min-height:1300px;margin:0 auto;background:linear-gradient(180deg,#fcfcfb 0%,#f6f5f1 100%);position:relative;overflow:hidden;border-radius:18px}
+  .artboard::before{content:'';position:absolute;inset:70px 110px 360px;background:radial-gradient(circle at 50% 40%,rgba(242,224,197,.65),rgba(255,255,255,.05) 65%);border-radius:50% 50% 46% 46%/56% 56% 44% 44%}
+  .cream{position:absolute;left:240px;top:410px;width:300px;height:68px;background:linear-gradient(90deg,rgba(255,255,255,.2),rgba(255,255,255,.95),rgba(255,255,255,.2));border-radius:999px;filter:blur(1px);opacity:.9}
+  .hand-back,.hand-front{position:absolute;background:linear-gradient(180deg,#f4c9aa,#ebb48e);box-shadow:0 10px 30px rgba(137,89,53,.18)}
+  .hand-back{left:214px;top:370px;width:330px;height:200px;border-radius:120px 120px 100px 100px;transform:rotate(12deg)}
+  .hand-front{left:462px;top:250px;width:130px;height:360px;border-radius:80px;transform:rotate(20deg)}
+  .finger{position:absolute;background:linear-gradient(180deg,#f7ceb2,#ebae8e);border-radius:60px;box-shadow:0 8px 20px rgba(137,89,53,.12)}
+  .finger.one{left:446px;top:310px;width:52px;height:260px;transform:rotate(24deg)}
+  .finger.two{left:490px;top:290px;width:50px;height:238px;transform:rotate(16deg)}
+  .nail{position:absolute;width:38px;height:26px;background:linear-gradient(180deg,#f7bfc4,#e1838d);border-radius:18px 18px 14px 14px}
+  .nail.n1{left:462px;top:534px;transform:rotate(24deg)} .nail.n2{left:509px;top:500px;transform:rotate(16deg)}
+  .copy{position:absolute;left:0;right:0;bottom:88px;text-align:center;padding:0 90px;color:#2d4a73}
+  .copy .l1,.copy .l2{font-size:24px;line-height:1.45;font-weight:500}
+  .copy .l3{font-size:32px;line-height:1.35;font-weight:900;margin-top:8px}
+  [contenteditable]:hover{outline:2px dashed #4fc3f7;outline-offset:3px}[contenteditable]:focus{outline:2px solid #4fc3f7;outline-offset:3px}
+</style>
+</head>
+<body>
+<div class="compare">
+  <div class="panel">
+    <div class="panel-head">Original Reference 013</div>
+    <div class="ref-wrap"><img src="../nbnaturebalance_ref_13_17/detail_013.gif" alt="detail 013 original"></div>
+  </div>
+  <div class="panel">
+    <div class="panel-head">HTML Recreation 013</div>
+    <div class="stage">
+      <section class="artboard">
+        <div class="hand-back"></div><div class="hand-front"></div><div class="finger one"></div><div class="finger two"></div><div class="nail n1"></div><div class="nail n2"></div><div class="cream"></div>
+        <div class="copy">
+          <div class="l1" contenteditable="true">자체 개발 끝에 탄생한 배합법으로</div>
+          <div class="l2" contenteditable="true">5가지 유산균을 아낌없이 넣어 만든</div>
+          <div class="l3" contenteditable="true">바이젤디 크림으로<br>튼튼한 피부장벽을 만드세요</div>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+</body>
+</html>
