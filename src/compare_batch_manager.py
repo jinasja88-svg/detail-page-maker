@@ -119,6 +119,7 @@ def build_plan_payload(
     details: list[DetailImage],
     compares: list[ComparePage],
     batch_size: int,
+    slug: str,
     product_label: str,
     resume_after_last_done: bool,
 ) -> dict:
@@ -135,7 +136,7 @@ def build_plan_payload(
                     {
                         "index": item.index,
                         "image": item.name,
-                        "compare_file": f"curigen_detail_{item.index:03d}_compare.html",
+                        "compare_file": f"{slug}_detail_{item.index:03d}_compare.html",
                         "done": item.index in done_indexes,
                     }
                     for item in batch
@@ -330,6 +331,7 @@ def main() -> None:
         details,
         compares,
         args.batch_size,
+        args.slug,
         args.product_label,
         args.resume_after_last_done,
     )

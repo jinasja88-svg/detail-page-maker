@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Curigen4 Detail 005 Compare</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap');
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #111; font-family: 'Noto Sans KR', sans-serif; padding: 24px; }
+  .compare { max-width: 1600px; margin: 0 auto; display: grid; grid-template-columns: 420px 1fr; gap: 24px; }
+  .panel { background: #fff; border-radius: 20px; overflow: hidden; box-shadow: 0 16px 40px rgba(0,0,0,.18); }
+  .panel-head { padding: 14px 18px; font-size: 14px; font-weight: 800; background: #1f1f1f; color: #fff; }
+  .ref-wrap { padding: 14px; background: #f3f3f3; }
+  .ref-wrap img { width: 100%; display: block; border-radius: 14px; }
+  .stage { padding: 34px; background: #f3eef8; }
+  .artboard {
+    width: 860px; min-height: 1560px; margin: 0 auto; border-radius: 18px; overflow: hidden;
+    background:
+      radial-gradient(circle at 18% 10%, rgba(160, 232, 120, .45), transparent 24%),
+      linear-gradient(180deg, #c6c7bf 0%, #7f49a1 100%);
+    padding: 62px 58px;
+    color: #fff;
+  }
+  .headline { text-align: center; font-size: 90px; line-height: 1.1; font-weight: 900; letter-spacing: -.08em; margin-bottom: 24px; }
+  .headline b { display: block; }
+  .problems { display: grid; gap: 30px; margin-top: 34px; }
+  .problem {
+    display: grid; grid-template-columns: 180px 1fr; gap: 28px; align-items: center;
+  }
+  .thumb {
+    height: 180px; border-radius: 12px; overflow: hidden;
+    background: linear-gradient(180deg, rgba(255,255,255,.28), rgba(255,255,255,.08));
+    border: 1px solid rgba(255,255,255,.2); position: relative;
+  }
+  .thumb.hand::before, .thumb.germ::before, .thumb.box::before {
+    content: ""; position: absolute; inset: 22px; border-radius: 14px;
+    background: linear-gradient(135deg, rgba(255,255,255,.26), rgba(0,0,0,.08));
+  }
+  .label { font-size: 18px; color: rgba(255,255,255,.55); margin-bottom: 10px; }
+  .desc { font-size: 33px; line-height: 1.38; letter-spacing: -.05em; font-weight: 700; }
+  .bottom { margin-top: 58px; text-align: center; }
+  .bottom .q { font-size: 54px; line-height: 1.22; font-weight: 900; letter-spacing: -.06em; margin-bottom: 26px; }
+  .bottom .s { font-size: 28px; line-height: 1.7; color: rgba(255,255,255,.88); letter-spacing: -.04em; }
+  [contenteditable]:hover { outline: 2px dashed #4fc3f7; outline-offset: 3px; }
+  [contenteditable]:focus { outline: 2px solid #4fc3f7; outline-offset: 3px; }
+</style>
+</head>
+<body>
+<div class="compare">
+  <div class="panel">
+    <div class="panel-head">Original Reference Curigen4 005</div>
+    <div class="ref-wrap"><img src="../curigen_cafe24_com_8a53d007/detail_images/detail_005.jpg" alt="curigen4 detail 005 original"></div>
+  </div>
+  <div class="panel">
+    <div class="panel-head">HTML Recreation Curigen4 005</div>
+    <div class="stage">
+      <section class="artboard">
+        <div class="headline" contenteditable="true">아직도<br><b>아무 제품이나</b> 손발톱에 사용하시나요?</div>
+        <div class="problems">
+          <div class="problem">
+            <div class="thumb hand"></div>
+            <div>
+              <div class="label">Problem 01</div>
+              <div class="desc" contenteditable="true">한, 둘이면 괜찮겠지<br>사실상 매니큐어에 가까운 제품</div>
+            </div>
+          </div>
+          <div class="problem">
+            <div class="thumb germ"></div>
+            <div>
+              <div class="label">Problem 02</div>
+              <div class="desc" contenteditable="true">영양성분이 추가 되어져도<br>유해균을 잡지 못한 제품</div>
+            </div>
+          </div>
+          <div class="problem">
+            <div class="thumb box"></div>
+            <div>
+              <div class="label">Problem 03</div>
+              <div class="desc" contenteditable="true">증명되지 않은 살균효과만<br>투항하는 제품</div>
+            </div>
+          </div>
+        </div>
+        <div class="bottom">
+          <div class="q" contenteditable="true">이런 제품을 사용하지는<br>않으셨나요?</div>
+          <div class="s" contenteditable="true">인증되지 않은 불완전한 살균 효과로<br>손상이 우려되는 사례가 많았습니다.</div>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+</body>
+</html>
