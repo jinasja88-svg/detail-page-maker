@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ordered Plan Stacked</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #0e1116; font-family: 'Segoe UI', 'Malgun Gothic', sans-serif; color: #edf2f7; }
+  .page { max-width: 980px; margin: 0 auto; padding: 24px 0 64px; }
+  .header { position: sticky; top: 0; z-index: 10; margin-bottom: 16px; padding: 18px 20px; border-radius: 16px; background: rgba(14,17,22,.94); border: 1px solid rgba(255,255,255,.08); backdrop-filter: blur(8px); }
+  .header h1 { font-size: 26px; margin-bottom: 6px; }
+  .header p { color: #b6c0cb; line-height: 1.6; }
+  .stack { display: grid; gap: 14px; }
+  .block { background: #171b22; border: 1px solid rgba(255,255,255,.08); border-radius: 18px; overflow: hidden; box-shadow: 0 16px 40px rgba(0,0,0,.22); }
+  .meta { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; padding: 12px 14px; background: #1e2530; border-bottom: 1px solid rgba(255,255,255,.06); }
+  .order, .tag, .role, .id { display: inline-block; padding: 6px 10px; border-radius: 999px; font-size: 12px; font-weight: 800; }
+  .order { background: #205e5b; color: #fff; min-width: 36px; text-align: center; }
+  .tag { color: #fff; }
+  .source-A { background: #1f6feb; }
+  .source-C { background: #b26a00; }
+  .source-D { background: #1f8f4e; }
+  .source-E { background: #7a42c3; }
+  .type-selected { background: #205e5b; }
+  .type-keep { background: #4a5563; }
+  .role { background: #2a303b; color: #d6dee8; }
+  .id { background: #11161c; color: #c7d0da; }
+  img { width: 100%; display: block; background: #fff; }
+  .block.keep { opacity: .92; }
+</style>
+</head>
+<body>
+  <main class="page">
+    <section class="header">
+      <h1>26개 배치안 세로 보기</h1>
+      <p>정렬된 섹션들을 상세페이지처럼 위에서 아래로 이어서 보는 파일입니다. 선택 섹션과 keep 섹션을 함께 확인할 수 있습니다.</p>
+    </section>
+    <section class="stack">
+      <section class="block"><div class="meta"><span class="order">1</span><span class="tag source-E">E</span><span class="tag type-selected">selected</span><span class="role">HOOK</span><span class="id">E_010</span></div><img src="../brand_naver_com_a27a1ef6/sections/section_010.png"></section>
+      <section class="block"><div class="meta"><span class="order">2</span><span class="tag source-A">A</span><span class="tag type-selected">selected</span><span class="role">PRODUCT_INTRO</span><span class="id">A_004</span></div><img src="../massagegun_multi_20260330_v2/sources/A_coupang_products/sections/section_004.png"></section>
+      <section class="block"><div class="meta"><span class="order">3</span><span class="tag source-C">C</span><span class="tag type-selected">selected</span><span class="role">PAIN</span><span class="id">C_010</span></div><img src="../massagegun_multi_20260330_v2/sources/C_naver_products/sections/section_010.png"></section>
+      <section class="block"><div class="meta"><span class="order">4</span><span class="tag source-C">C</span><span class="tag type-selected">selected</span><span class="role">SOLUTION</span><span class="id">C_012</span></div><img src="../massagegun_multi_20260330_v2/sources/C_naver_products/sections/section_012.png"></section>
+      <section class="block"><div class="meta"><span class="order">5</span><span class="tag source-D">D</span><span class="tag type-selected">selected</span><span class="role">POWER_FEATURE</span><span class="id">D_010</span></div><img src="../brand_naver_com_933073be/sections/section_010.png"></section>
+      <section class="block"><div class="meta"><span class="order">6</span><span class="tag source-E">E</span><span class="tag type-selected">selected</span><span class="role">USE_SCENE</span><span class="id">E_020</span></div><img src="../brand_naver_com_a27a1ef6/sections/section_020.png"></section>
+      <section class="block"><div class="meta"><span class="order">7</span><span class="tag source-D">D</span><span class="tag type-selected">selected</span><span class="role">COMPARE</span><span class="id">D_031</span></div><img src="../brand_naver_com_933073be/sections/section_031.png"></section>
+      <section class="block"><div class="meta"><span class="order">8</span><span class="tag source-A">A</span><span class="tag type-selected">selected</span><span class="role">FEATURE_SUMMARY</span><span class="id">A_005</span></div><img src="../massagegun_multi_20260330_v2/sources/A_coupang_products/sections/section_005.png"></section>
+      <section class="block"><div class="meta"><span class="order">9</span><span class="tag source-E">E</span><span class="tag type-selected">selected</span><span class="role">TARGET_AREA</span><span class="id">E_040</span></div><img src="../brand_naver_com_a27a1ef6/sections/section_040.png"></section>
+      <section class="block"><div class="meta"><span class="order">10</span><span class="tag source-D">D</span><span class="tag type-selected">selected</span><span class="role">BATTERY</span><span class="id">D_060</span></div><img src="../brand_naver_com_933073be/sections/section_060.png"></section>
+      <section class="block"><div class="meta"><span class="order">11</span><span class="tag source-A">A</span><span class="tag type-selected">selected</span><span class="role">LIGHTWEIGHT</span><span class="id">A_018</span></div><img src="../massagegun_multi_20260330_v2/sources/A_coupang_products/sections/section_018.png"></section>
+      <section class="block"><div class="meta"><span class="order">12</span><span class="tag source-E">E</span><span class="tag type-selected">selected</span><span class="role">EASY_USE</span><span class="id">E_055</span></div><img src="../brand_naver_com_a27a1ef6/sections/section_055.png"></section>
+      <section class="block"><div class="meta"><span class="order">13</span><span class="tag source-D">D</span><span class="tag type-selected">selected</span><span class="role">CHARGING</span><span class="id">D_070</span></div><img src="../brand_naver_com_933073be/sections/section_070.png"></section>
+      <section class="block keep"><div class="meta"><span class="order">14</span><span class="tag source-A">A</span><span class="tag type-keep">keep</span><span class="role">SKELETON_KEEP</span><span class="id">A_011</span></div><img src="../massagegun_multi_20260330_v2/sources/A_coupang_products/sections/section_011.png"></section>
+      <section class="block keep"><div class="meta"><span class="order">15</span><span class="tag source-A">A</span><span class="tag type-keep">keep</span><span class="role">SKELETON_KEEP</span><span class="id">A_012</span></div><img src="../massagegun_multi_20260330_v2/sources/A_coupang_products/sections/section_012.png"></section>
+      <section class="block"><div class="meta"><span class="order">16</span><span class="tag source-D">D</span><span class="tag type-selected">selected</span><span class="role">DETAIL_SHAPE</span><span class="id">D_050</span></div><img src="../brand_naver_com_933073be/sections/section_050.png"></section>
+      <section class="block"><div class="meta"><span class="order">17</span><span class="tag source-E">E</span><span class="tag type-selected">selected</span><span class="role">BRAND_HERO</span><span class="id">E_025</span></div><img src="../brand_naver_com_a27a1ef6/sections/section_025.png"></section>
+      <section class="block keep"><div class="meta"><span class="order">18</span><span class="tag source-A">A</span><span class="tag type-keep">keep</span><span class="role">SKELETON_KEEP</span><span class="id">A_013</span></div><img src="../massagegun_multi_20260330_v2/sources/A_coupang_products/sections/section_013.png"></section>
+      <section class="block keep"><div class="meta"><span class="order">19</span><span class="tag source-A">A</span><span class="tag type-keep">keep</span><span class="role">SKELETON_KEEP</span><span class="id">A_014</span></div><img src="../massagegun_multi_20260330_v2/sources/A_coupang_products/sections/section_014.png"></section>
+      <section class="block"><div class="meta"><span class="order">20</span><span class="tag source-E">E</span><span class="tag type-selected">selected</span><span class="role">HOW_TO</span><span class="id">E_047</span></div><img src="../brand_naver_com_a27a1ef6/sections/section_047.png"></section>
+      <section class="block"><div class="meta"><span class="order">21</span><span class="tag source-D">D</span><span class="tag type-selected">selected</span><span class="role">BATTERY_REPEAT</span><span class="id">D_060</span></div><img src="../brand_naver_com_933073be/sections/section_060.png"></section>
+      <section class="block keep"><div class="meta"><span class="order">22</span><span class="tag source-A">A</span><span class="tag type-keep">keep</span><span class="role">SKELETON_KEEP</span><span class="id">A_015</span></div><img src="../massagegun_multi_20260330_v2/sources/A_coupang_products/sections/section_015.png"></section>
+      <section class="block keep"><div class="meta"><span class="order">23</span><span class="tag source-A">A</span><span class="tag type-keep">keep</span><span class="role">SKELETON_KEEP</span><span class="id">A_016</span></div><img src="../massagegun_multi_20260330_v2/sources/A_coupang_products/sections/section_016.png"></section>
+      <section class="block"><div class="meta"><span class="order">24</span><span class="tag source-D">D</span><span class="tag type-selected">selected</span><span class="role">COMPARE_REPEAT</span><span class="id">D_031</span></div><img src="../brand_naver_com_933073be/sections/section_031.png"></section>
+      <section class="block"><div class="meta"><span class="order">25</span><span class="tag source-E">E</span><span class="tag type-selected">selected</span><span class="role">EASY_USE_REPEAT</span><span class="id">E_055</span></div><img src="../brand_naver_com_a27a1ef6/sections/section_055.png"></section>
+      <section class="block keep"><div class="meta"><span class="order">26</span><span class="tag source-A">A</span><span class="tag type-keep">keep</span><span class="role">SKELETON_KEEP</span><span class="id">A_026</span></div><img src="../massagegun_multi_20260330_v2/sources/A_coupang_products/sections/section_026.png"></section>
+    </section>
+  </main>
+</body>
+</html>

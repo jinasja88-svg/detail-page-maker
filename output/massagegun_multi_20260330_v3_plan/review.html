@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Six Source Plan Review</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', 'Malgun Gothic', sans-serif; background: #0f1115; color: #edf2f7; padding: 24px; }
+  .page { max-width: 1380px; margin: 0 auto; display: grid; gap: 18px; }
+  .card { background: #171b22; border: 1px solid rgba(255,255,255,.08); border-radius: 18px; padding: 22px 24px; }
+  h1 { font-size: 28px; margin-bottom: 8px; }
+  h2 { font-size: 22px; margin-bottom: 14px; }
+  p { line-height: 1.7; color: #c8d1da; }
+  .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-top: 16px; }
+  .stat { background: #202632; border-radius: 14px; padding: 14px 16px; }
+  .label { font-size: 12px; color: #98a5b3; margin-bottom: 8px; font-weight: 700; }
+  .value { font-size: 24px; font-weight: 900; }
+  .list { display: grid; gap: 10px; margin-top: 12px; }
+  .item { display: flex; justify-content: space-between; gap: 12px; padding: 12px 14px; border-radius: 12px; background: #202632; }
+  .item strong { color: #fff; }
+  .source-A { color: #8bd3ff; }
+  .source-C { color: #ffb366; }
+  .source-D { color: #7ee787; }
+  .source-E { color: #d2a8ff; }
+  .source-fail { color: #ff7b72; }
+  .slot-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 10px; margin-top: 16px; }
+  .slot { padding: 12px 10px; border-radius: 12px; text-align: center; font-size: 13px; line-height: 1.45; background: #202632; }
+  .slot.keep { background: #2a303b; }
+  .slot.selected { background: #205e5b; }
+</style>
+</head>
+<body>
+  <main class="page">
+    <section class="card">
+      <h1>6소스 스캔 -> 선택 -> 정렬 결과</h1>
+      <p>이번 안은 `A, C, D, E`를 usable 소스로 잡고, `B, F`는 캡차 실패로 제외한 뒤 만든 1차 정렬안입니다. 핵심은 `뼈대 길이 26 유지`와 `같은 소스 3연속 금지`입니다.</p>
+    </section>
+
+    <section class="card">
+      <h2>1. 전체 스캔</h2>
+      <div class="stats">
+        <div class="stat"><div class="label">전체 소스</div><div class="value">6</div></div>
+        <div class="stat"><div class="label">사용 가능</div><div class="value">4</div></div>
+        <div class="stat"><div class="label">실패</div><div class="value">2</div></div>
+        <div class="stat"><div class="label">전체 섹션</div><div class="value">244</div></div>
+      </div>
+      <div class="list">
+        <div class="item"><span class="source-A">A 뼈대</span><strong>26개</strong></div>
+        <div class="item"><span class="source-fail">B 참조</span><strong>캡차 실패</strong></div>
+        <div class="item"><span class="source-C">C 참조</span><strong>65개</strong></div>
+        <div class="item"><span class="source-D">D 참조</span><strong>79개</strong></div>
+        <div class="item"><span class="source-E">E 참조</span><strong>74개</strong></div>
+        <div class="item"><span class="source-fail">F 참조</span><strong>캡차 실패</strong></div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>2. 괜찮은 것들만 선택</h2>
+      <div class="list">
+        <div class="item"><span class="source-E">HOOK</span><strong>E_010</strong></div>
+        <div class="item"><span class="source-A">PRODUCT_INTRO</span><strong>A_004</strong></div>
+        <div class="item"><span class="source-C">PAIN</span><strong>C_010</strong></div>
+        <div class="item"><span class="source-C">SOLUTION</span><strong>C_012</strong></div>
+        <div class="item"><span class="source-D">POWER_FEATURE</span><strong>D_010</strong></div>
+        <div class="item"><span class="source-E">USE_SCENE</span><strong>E_020</strong></div>
+        <div class="item"><span class="source-D">COMPARE</span><strong>D_031</strong></div>
+        <div class="item"><span class="source-A">FEATURE_SUMMARY</span><strong>A_005</strong></div>
+        <div class="item"><span class="source-E">TARGET_AREA</span><strong>E_040</strong></div>
+        <div class="item"><span class="source-D">BATTERY</span><strong>D_060</strong></div>
+        <div class="item"><span class="source-A">LIGHTWEIGHT</span><strong>A_018</strong></div>
+        <div class="item"><span class="source-E">EASY_USE</span><strong>E_055</strong></div>
+        <div class="item"><span class="source-D">CHARGING</span><strong>D_070</strong></div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>3. 순서대로 정렬</h2>
+      <p>배치 흐름은 `후킹 -> 제품소개 -> 문제제기 -> 해결 -> 성능 -> 활용 -> 비교 -> 요약기능 -> 사용부위 -> 배터리 -> 가벼움 -> 쉬운사용 -> 충전 -> 후반 보강` 순서입니다. 같은 소스가 3개 이상 연속되지 않도록 슬롯을 조정했습니다.</p>
+      <div class="slot-grid">
+        <div class="slot selected">1<br>E<br>HOOK</div>
+        <div class="slot selected">2<br>A<br>INTRO</div>
+        <div class="slot selected">3<br>C<br>PAIN</div>
+        <div class="slot selected">4<br>C<br>SOLUTION</div>
+        <div class="slot selected">5<br>D<br>POWER</div>
+        <div class="slot selected">6<br>E<br>USE</div>
+        <div class="slot selected">7<br>D<br>COMPARE</div>
+        <div class="slot selected">8<br>A<br>SUMMARY</div>
+        <div class="slot selected">9<br>E<br>AREA</div>
+        <div class="slot selected">10<br>D<br>BATTERY</div>
+        <div class="slot selected">11<br>A<br>LIGHT</div>
+        <div class="slot selected">12<br>E<br>EASY</div>
+        <div class="slot selected">13<br>D<br>CHARGE</div>
+        <div class="slot keep">14<br>A<br>KEEP</div>
+        <div class="slot keep">15<br>A<br>KEEP</div>
+        <div class="slot selected">16<br>D<br>DETAIL</div>
+        <div class="slot selected">17<br>E<br>HERO</div>
+        <div class="slot keep">18<br>A<br>KEEP</div>
+        <div class="slot keep">19<br>A<br>KEEP</div>
+        <div class="slot selected">20<br>E<br>HOWTO</div>
+        <div class="slot selected">21<br>D<br>BATTERY</div>
+        <div class="slot keep">22<br>A<br>KEEP</div>
+        <div class="slot keep">23<br>A<br>KEEP</div>
+        <div class="slot selected">24<br>D<br>COMPARE</div>
+        <div class="slot selected">25<br>E<br>EASY</div>
+        <div class="slot keep">26<br>A<br>KEEP</div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

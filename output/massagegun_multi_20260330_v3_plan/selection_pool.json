@@ -1,0 +1,23 @@
+{
+  "job_id": "massagegun_multi_20260330_v3_plan",
+  "step": 2,
+  "title": "괜찮은 것들만 선택",
+  "selection_count": 15,
+  "items": [
+    { "role": "HOOK", "section_id": "E_010", "source": "E", "file": "output/brand_naver_com_a27a1ef6/sections/section_010.png", "reason": "제품을 실제로 쓰는 장면이라 첫인상 전달력이 좋음" },
+    { "role": "PRODUCT_INTRO", "section_id": "A_004", "source": "A", "file": "output/massagegun_multi_20260330_v2/sources/A_coupang_products/sections/section_004.png", "reason": "제품 형태와 뼈대 톤을 안정적으로 보여줌" },
+    { "role": "PAIN", "section_id": "C_010", "source": "C", "file": "output/massagegun_multi_20260330_v2/sources/C_naver_products/sections/section_010.png", "reason": "문제 제기와 후기형 설득이 가장 강함" },
+    { "role": "SOLUTION", "section_id": "C_012", "source": "C", "file": "output/massagegun_multi_20260330_v2/sources/C_naver_products/sections/section_012.png", "reason": "문제 해결 구조가 분명하고 비교 구도가 좋음" },
+    { "role": "POWER_FEATURE", "section_id": "D_010", "source": "D", "file": "output/brand_naver_com_933073be/sections/section_010.png", "reason": "더블 헤드와 강한 성능 메시지가 직관적" },
+    { "role": "USE_SCENE", "section_id": "E_020", "source": "E", "file": "output/brand_naver_com_a27a1ef6/sections/section_020.png", "reason": "허벅지 사용 장면으로 활용 범위 전달이 좋음" },
+    { "role": "COMPARE", "section_id": "D_031", "source": "D", "file": "output/brand_naver_com_933073be/sections/section_031.png", "reason": "세대 비교형 구조로 설득력이 높음" },
+    { "role": "FEATURE_SUMMARY", "section_id": "A_005", "source": "A", "file": "output/massagegun_multi_20260330_v2/sources/A_coupang_products/sections/section_005.png", "reason": "핵심 기능 요약 카드 구조가 깔끔함" },
+    { "role": "TARGET_AREA", "section_id": "E_040", "source": "E", "file": "output/brand_naver_com_a27a1ef6/sections/section_040.png", "reason": "필요 부위에 대기만 하면 된다는 사용 장면 전달이 좋음" },
+    { "role": "BATTERY", "section_id": "D_060", "source": "D", "file": "output/brand_naver_com_933073be/sections/section_060.png", "reason": "배터리 지속 시간 메시지가 강함" },
+    { "role": "LIGHTWEIGHT", "section_id": "A_018", "source": "A", "file": "output/massagegun_multi_20260330_v2/sources/A_coupang_products/sections/section_018.png", "reason": "가벼움과 사용 편의 메시지를 한 장면에서 전달 가능" },
+    { "role": "EASY_USE", "section_id": "E_055", "source": "E", "file": "output/brand_naver_com_a27a1ef6/sections/section_055.png", "reason": "한 번의 터치로 사용 가능하다는 생활 장면이 좋음" },
+    { "role": "CHARGING", "section_id": "D_070", "source": "D", "file": "output/brand_naver_com_933073be/sections/section_070.png", "reason": "C타입 충전으로 편의성을 깔끔하게 전달" },
+    { "role": "DETAIL_SHAPE", "section_id": "D_050", "source": "D", "file": "output/brand_naver_com_933073be/sections/section_050.png", "reason": "더블 헤드 형상을 선명하게 보여주는 디테일 컷" },
+    { "role": "BRAND_HERO", "section_id": "E_025", "source": "E", "file": "output/brand_naver_com_a27a1ef6/sections/section_025.png", "reason": "브랜드/제품 무드 컷으로 중반 집중도를 높이기 좋음" }
+  ]
+}

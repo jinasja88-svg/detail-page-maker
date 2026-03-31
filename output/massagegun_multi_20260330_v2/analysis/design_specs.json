@@ -1,0 +1,188 @@
+{
+  "job_id": "massagegun_multi_20260330_v2",
+  "notes": [
+    "현재는 수동 추출한 5개 핵심 섹션 디자인 스펙만 포함한다.",
+    "멀티 생성은 역할보다 section_id 기준 디자인 스펙을 우선 사용한다.",
+    "카피는 원본 줄 수와 글자수에 최대한 맞춰 단어만 치환한다."
+  ],
+  "sections": [
+    {
+      "section_id": "A_004",
+      "layout_type": "right_text_over_model_photo",
+      "source_image": "sources/A_coupang_products/sections/section_004.png",
+      "mask_boxes": [
+        {
+          "x": 515,
+          "y": 70,
+          "w": 310,
+          "h": 420,
+          "radius": 24,
+          "fill": "rgba(248,248,246,0.94)"
+        }
+      ],
+      "text_blocks": [
+        {
+          "name": "kicker",
+          "line_count": 1,
+          "char_target": 4,
+          "sample": "HOOK"
+        },
+        {
+          "name": "headline",
+          "line_count": 3,
+          "char_target": 10,
+          "sample": "미니 마사지건"
+        },
+        {
+          "name": "badge",
+          "line_count": 1,
+          "char_target": 7,
+          "sample": "IMG-300"
+        }
+      ]
+    },
+    {
+      "section_id": "C_010",
+      "layout_type": "top_headline_with_review_bubbles",
+      "source_image": "sources/C_naver_products/sections/section_010.png",
+      "mask_boxes": [
+        {
+          "x": 30,
+          "y": 20,
+          "w": 800,
+          "h": 690,
+          "radius": 28,
+          "fill": "rgba(255,248,245,0.95)"
+        }
+      ],
+      "text_blocks": [
+        {
+          "name": "headline",
+          "line_count": 3,
+          "char_target": 12,
+          "sample": "꼬집는 느낌만 너무 강해요"
+        },
+        {
+          "name": "question",
+          "line_count": 1,
+          "char_target": 14,
+          "sample": "이런 리뷰 본 적 있으신가요?"
+        },
+        {
+          "name": "bubble_1",
+          "line_count": 2,
+          "char_target": 18,
+          "sample": "제대로 밀착이 안돼서 효과가 없네요"
+        },
+        {
+          "name": "bubble_2",
+          "line_count": 2,
+          "char_target": 18,
+          "sample": "시원하지도 않고 아프기만 해요"
+        }
+      ]
+    },
+    {
+      "section_id": "C_012",
+      "layout_type": "red_solution_with_two_panels",
+      "source_image": "sources/C_naver_products/sections/section_012.png",
+      "mask_boxes": [
+        {
+          "x": 34,
+          "y": 46,
+          "w": 792,
+          "h": 500,
+          "radius": 28,
+          "fill": "rgba(226,94,94,0.94)"
+        }
+      ],
+      "text_blocks": [
+        {
+          "name": "headline",
+          "line_count": 3,
+          "char_target": 16,
+          "sample": "전부 해결했습니다"
+        },
+        {
+          "name": "left_panel_title",
+          "line_count": 2,
+          "char_target": 15,
+          "sample": "일반 안마기"
+        },
+        {
+          "name": "right_panel_title",
+          "line_count": 2,
+          "char_target": 18,
+          "sample": "메수스 갈고리형"
+        }
+      ]
+    },
+    {
+      "section_id": "A_005",
+      "layout_type": "three_icon_cards",
+      "source_image": "sources/A_coupang_products/sections/section_005.png",
+      "mask_boxes": [],
+      "text_blocks": [
+        {
+          "name": "title",
+          "line_count": 1,
+          "char_target": 11,
+          "sample": "CHECK POINT"
+        },
+        {
+          "name": "card_1",
+          "line_count": 2,
+          "char_target": 12,
+          "sample": "4종 교체형 헤드"
+        },
+        {
+          "name": "card_2",
+          "line_count": 2,
+          "char_target": 12,
+          "sample": "6단계 강도 조절"
+        },
+        {
+          "name": "card_3",
+          "line_count": 2,
+          "char_target": 12,
+          "sample": "3,200RPM"
+        }
+      ]
+    },
+    {
+      "section_id": "A_018",
+      "layout_type": "top_copy_over_product_weight",
+      "source_image": "sources/A_coupang_products/sections/section_018.png",
+      "mask_boxes": [
+        {
+          "x": 88,
+          "y": 40,
+          "w": 684,
+          "h": 320,
+          "radius": 24,
+          "fill": "rgba(255,255,255,0.97)"
+        }
+      ],
+      "text_blocks": [
+        {
+          "name": "point",
+          "line_count": 1,
+          "char_target": 8,
+          "sample": "POINT 05"
+        },
+        {
+          "name": "headline",
+          "line_count": 2,
+          "char_target": 14,
+          "sample": "초경량 390g"
+        },
+        {
+          "name": "body",
+          "line_count": 2,
+          "char_target": 26,
+          "sample": "한 손으로도 편하게 사용 가능합니다"
+        }
+      ]
+    }
+  ]
+}

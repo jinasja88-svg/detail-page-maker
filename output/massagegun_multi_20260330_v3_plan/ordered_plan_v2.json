@@ -1,0 +1,40 @@
+{
+  "job_id": "massagegun_multi_20260330_v3_plan",
+  "step": 3,
+  "title": "순서대로 정렬",
+  "rule_summary": {
+    "length_rule": "최종 길이는 뼈대 A의 26개 섹션 길이를 그대로 유지",
+    "logic_rule": "위에서 아래로 후킹 -> 문제제기 -> 해결 -> 기능 -> 활용 -> 비교 -> 편의 -> 마무리 흐름을 유지",
+    "mix_rule": "같은 소스가 3개 이상 연속으로 나오지 않도록 배치",
+    "selection_rule": "뼈대는 길이 기준으로만 쓰고 실제 내용은 A/C/D/E를 최대한 섞는다"
+  },
+  "target_length": 26,
+  "ordered_slots": [
+    { "slot": 1, "source": "E", "section_id": "E_010", "role": "HOOK", "type": "selected" },
+    { "slot": 2, "source": "A", "section_id": "A_004", "role": "PRODUCT_INTRO", "type": "selected" },
+    { "slot": 3, "source": "C", "section_id": "C_010", "role": "PAIN", "type": "selected" },
+    { "slot": 4, "source": "C", "section_id": "C_012", "role": "SOLUTION", "type": "selected" },
+    { "slot": 5, "source": "D", "section_id": "D_010", "role": "POWER_FEATURE", "type": "selected" },
+    { "slot": 6, "source": "E", "section_id": "E_020", "role": "USE_SCENE", "type": "selected" },
+    { "slot": 7, "source": "D", "section_id": "D_031", "role": "COMPARE", "type": "selected" },
+    { "slot": 8, "source": "A", "section_id": "A_005", "role": "FEATURE_SUMMARY", "type": "selected" },
+    { "slot": 9, "source": "E", "section_id": "E_040", "role": "TARGET_AREA", "type": "selected" },
+    { "slot": 10, "source": "D", "section_id": "D_060", "role": "BATTERY", "type": "selected" },
+    { "slot": 11, "source": "A", "section_id": "A_018", "role": "LIGHTWEIGHT", "type": "selected" },
+    { "slot": 12, "source": "E", "section_id": "E_055", "role": "EASY_USE", "type": "selected" },
+    { "slot": 13, "source": "D", "section_id": "D_070", "role": "CHARGING", "type": "selected" },
+    { "slot": 14, "source": "A", "section_id": "A_011", "role": "SKELETON_KEEP", "type": "keep" },
+    { "slot": 15, "source": "A", "section_id": "A_012", "role": "SKELETON_KEEP", "type": "keep" },
+    { "slot": 16, "source": "D", "section_id": "D_050", "role": "DETAIL_SHAPE", "type": "selected" },
+    { "slot": 17, "source": "E", "section_id": "E_025", "role": "BRAND_HERO", "type": "selected" },
+    { "slot": 18, "source": "A", "section_id": "A_013", "role": "SKELETON_KEEP", "type": "keep" },
+    { "slot": 19, "source": "A", "section_id": "A_014", "role": "SKELETON_KEEP", "type": "keep" },
+    { "slot": 20, "source": "E", "section_id": "E_047", "role": "HOW_TO", "type": "selected" },
+    { "slot": 21, "source": "D", "section_id": "D_060", "role": "BATTERY_REPEAT", "type": "selected" },
+    { "slot": 22, "source": "A", "section_id": "A_015", "role": "SKELETON_KEEP", "type": "keep" },
+    { "slot": 23, "source": "A", "section_id": "A_016", "role": "SKELETON_KEEP", "type": "keep" },
+    { "slot": 24, "source": "D", "section_id": "D_031", "role": "COMPARE_REPEAT", "type": "selected" },
+    { "slot": 25, "source": "E", "section_id": "E_055", "role": "EASY_USE_REPEAT", "type": "selected" },
+    { "slot": 26, "source": "A", "section_id": "A_026", "role": "SKELETON_KEEP", "type": "keep" }
+  ]
+}

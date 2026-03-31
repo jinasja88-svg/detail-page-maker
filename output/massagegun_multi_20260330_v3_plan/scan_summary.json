@@ -1,0 +1,21 @@
+{
+  "job_id": "massagegun_multi_20260330_v3_plan",
+  "step": 1,
+  "title": "전체 스캔",
+  "summary": {
+    "total_sources": 6,
+    "usable_sources": 4,
+    "failed_sources": 2,
+    "total_sections": 244,
+    "skeleton_source": "A",
+    "skeleton_length": 26
+  },
+  "sources": [
+    { "label": "A", "role": "뼈대", "status": "usable", "section_count": 26, "note": "길이 기준 뼈대" },
+    { "label": "B", "role": "참조", "status": "failed", "section_count": 0, "note": "캡차 실패" },
+    { "label": "C", "role": "참조", "status": "usable", "section_count": 65, "note": "문제 제기/해결 구조가 강함" },
+    { "label": "D", "role": "참조", "status": "usable", "section_count": 79, "note": "스펙/비교/배터리 장면이 강함" },
+    { "label": "E", "role": "참조", "status": "usable", "section_count": 74, "note": "라이프스타일/활용컷이 강함" },
+    { "label": "F", "role": "참조", "status": "failed", "section_count": 0, "note": "캡차 실패" }
+  ]
+}
