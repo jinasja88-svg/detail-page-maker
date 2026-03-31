@@ -1,0 +1,31 @@
+﻿You are extracting reconstruction-ready layout data from a Korean e-commerce detail-page section.
+
+Return only JSON that matches the provided schema.
+
+Goal:
+- Produce enough data so code can rebuild the section with HTML/CSS.
+- Focus on exact placement, visible text, approximate typography, and image placement.
+
+Rules:
+- Capture every visible text block that materially affects layout.
+- If a region has no text, do not invent text blocks there.
+- Estimate text positions using the section pixel space.
+- Font family may be a best-effort guess. If uncertain, describe the style in `font_style_notes`.
+- For each text block, include estimated line count and estimated character count so later copy can be rewritten to similar length.
+- For image blocks, indicate whether the source region already contains embedded text. If it does, mark `has_embedded_text=true`.
+- Use `shape_blocks` for cards, pills, masks, dividers, shadows, and large layout shapes that affect placement.
+- `inference_notes` should briefly list uncertain areas or approximations.
+- Do not add keys outside the schema.
+
+What to extract:
+1. Canvas size
+2. Background style
+3. Text block coordinates, size, font size, weight, line-height, color, alignment
+4. Estimated text length information
+5. Image block coordinates and type
+6. Decorative shape positions that matter for reconstruction
+
+Important:
+- This is not a role-classification task.
+- This is not a copywriting task.
+- This is a layout reconstruction task.

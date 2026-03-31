@@ -1,0 +1,29 @@
+﻿{
+  "section_id": "A_005",
+  "source": "A",
+  "slot": 8,
+  "role": "FEATURE_SUMMARY",
+  "canvas": { "width": 860, "height": 609 },
+  "copy_strategy": {
+    "goal": "3카드 요약형 섹션의 카드별 요약 문구를 같은 길이대에서 변형",
+    "global_rules": [
+      "상단 영문 헤드라인은 1줄 유지",
+      "각 카드 하단 문구는 2줄 유지",
+      "카드별 길이를 비슷하게 맞춤"
+    ]
+  },
+  "text_blocks": [
+    { "id": "headline_1", "kind": "headline", "original_text": "CHECK POINT", "rewrite_purpose": "섹션 공통 헤드라인", "box": { "x": 300, "y": 60, "w": 260, "h": 46 }, "text_metrics": { "estimated_line_count": 1, "estimated_char_count": 11, "max_char_count_recommended": 14, "min_char_count_recommended": 9, "line_break_allowed": false } },
+    { "id": "divider_1", "kind": "caption", "original_text": "—", "rewrite_purpose": "장식 요소", "box": { "x": 412, "y": 118, "w": 36, "h": 22 }, "text_metrics": { "estimated_line_count": 1, "estimated_char_count": 1, "max_char_count_recommended": 1, "min_char_count_recommended": 1, "line_break_allowed": false } },
+    { "id": "card_1_text", "kind": "body", "original_text": "부위별 맞춤 케어\n4종 교체형 헤드", "rewrite_purpose": "좌측 카드 요약 문구", "box": { "x": 68, "y": 480, "w": 220, "h": 92 }, "text_metrics": { "estimated_line_count": 2, "estimated_char_count": 14, "max_char_count_recommended": 16, "min_char_count_recommended": 10, "line_break_allowed": true } },
+    { "id": "card_2_text", "kind": "body", "original_text": "컨디션 맞춤\n6단계 강도 조절", "rewrite_purpose": "중앙 카드 요약 문구", "box": { "x": 322, "y": 480, "w": 220, "h": 92 }, "text_metrics": { "estimated_line_count": 2, "estimated_char_count": 14, "max_char_count_recommended": 16, "min_char_count_recommended": 10, "line_break_allowed": true } },
+    { "id": "card_3_text", "kind": "body", "original_text": "3,200RPM\n강력한 모터", "rewrite_purpose": "우측 카드 요약 문구", "box": { "x": 576, "y": 480, "w": 220, "h": 92 }, "text_metrics": { "estimated_line_count": 2, "estimated_char_count": 13, "max_char_count_recommended": 16, "min_char_count_recommended": 9, "line_break_allowed": true } }
+  ],
+  "full_text_for_reference": [
+    "CHECK POINT",
+    "—",
+    "부위별 맞춤 케어 / 4종 교체형 헤드",
+    "컨디션 맞춤 / 6단계 강도 조절",
+    "3,200RPM / 강력한 모터"
+  ]
+}

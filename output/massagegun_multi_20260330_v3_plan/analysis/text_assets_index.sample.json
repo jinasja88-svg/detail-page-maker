@@ -1,0 +1,11 @@
+﻿{
+  "job_id": "massagegun_multi_20260330_v3_plan",
+  "items": [
+    { "section_id": "A_004", "slot": 2, "role": "PRODUCT_INTRO", "layout_spec_file": "analysis/A_004_layout_spec.sample.json", "text_assets_file": "analysis/A_004_text_assets.sample.json" },
+    { "section_id": "C_010", "slot": 3, "role": "PAIN", "layout_spec_file": "analysis/C_010_layout_spec.sample.json", "text_assets_file": "analysis/C_010_text_assets.sample.json" },
+    { "section_id": "C_012", "slot": 4, "role": "SOLUTION", "layout_spec_file": "analysis/C_012_layout_spec.sample.json", "text_assets_file": "analysis/C_012_text_assets.sample.json" },
+    { "section_id": "D_031", "slot": 7, "role": "COMPARE", "layout_spec_file": "analysis/D_031_layout_spec.sample.json", "text_assets_file": "analysis/D_031_text_assets.sample.json" },
+    { "section_id": "A_005", "slot": 8, "role": "FEATURE_SUMMARY", "layout_spec_file": "analysis/A_005_layout_spec.sample.json", "text_assets_file": "analysis/A_005_text_assets.sample.json" },
+    { "section_id": "A_018", "slot": 11, "role": "LIGHTWEIGHT", "layout_spec_file": "analysis/A_018_layout_spec.sample.json", "text_assets_file": "analysis/A_018_text_assets.sample.json" }
+  ]
+}

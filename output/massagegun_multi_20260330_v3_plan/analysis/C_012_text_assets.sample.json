@@ -1,0 +1,33 @@
+﻿{
+  "section_id": "C_012",
+  "source": "C",
+  "slot": 4,
+  "role": "SOLUTION",
+  "canvas": { "width": 1000, "height": 1631 },
+  "copy_strategy": {
+    "goal": "강한 해결 메시지와 비교 카드 문구를 같은 박스 크기 안에서 변형",
+    "global_rules": [
+      "상단 해결 헤드라인은 1줄 유지",
+      "메인 해결 문구는 1줄 유지",
+      "비교 카드 본문은 각 3줄 내 유지"
+    ]
+  },
+  "text_blocks": [
+    { "id": "badge_top_1", "kind": "badge", "original_text": "11번의 리뉴얼, 독자적인 기술 개발···", "rewrite_purpose": "상단 짧은 성과/개선 라벨", "box": { "x": 178, "y": 82, "w": 568, "h": 68 }, "text_metrics": { "estimated_line_count": 1, "estimated_char_count": 24, "max_char_count_recommended": 26, "min_char_count_recommended": 18, "line_break_allowed": false } },
+    { "id": "headline_top_1", "kind": "headline", "original_text": "끊임없는 시도 끝에 이 모든 고민을", "rewrite_purpose": "문제 종결 전제 문장", "box": { "x": 48, "y": 203, "w": 896, "h": 76 }, "text_metrics": { "estimated_line_count": 1, "estimated_char_count": 20, "max_char_count_recommended": 22, "min_char_count_recommended": 16, "line_break_allowed": false } },
+    { "id": "headline_top_2", "kind": "headline", "original_text": "전부 해결했습니다!", "rewrite_purpose": "강한 해결 선언 문구", "box": { "x": 48, "y": 272, "w": 760, "h": 102 }, "text_metrics": { "estimated_line_count": 1, "estimated_char_count": 11, "max_char_count_recommended": 12, "min_char_count_recommended": 8, "line_break_allowed": false } },
+    { "id": "feature_num_1", "kind": "label", "original_text": "첫번째", "rewrite_purpose": "순번 라벨", "box": { "x": 78, "y": 500, "w": 120, "h": 40 }, "text_metrics": { "estimated_line_count": 1, "estimated_char_count": 3, "max_char_count_recommended": 4, "min_char_count_recommended": 2, "line_break_allowed": false } },
+    { "id": "feature_title_1", "kind": "headline", "original_text": "부드러운 360° 회전", "rewrite_purpose": "핵심 기능 제목", "box": { "x": 76, "y": 540, "w": 420, "h": 56 }, "text_metrics": { "estimated_line_count": 1, "estimated_char_count": 12, "max_char_count_recommended": 14, "min_char_count_recommended": 10, "line_break_allowed": false } },
+    { "id": "card_left_1", "kind": "body", "original_text": "와이라로만 움직임\n마사지 범위가 좁음\n압의 세기가 고르지 않음", "rewrite_purpose": "기존 방식의 한계 설명", "box": { "x": 86, "y": 690, "w": 368, "h": 124 }, "text_metrics": { "estimated_line_count": 3, "estimated_char_count": 28, "max_char_count_recommended": 32, "min_char_count_recommended": 24, "line_break_allowed": true } },
+    { "id": "card_right_1", "kind": "body", "original_text": "자체개발로 부드럽게 360도 회전\n마사지 범위가 넓음\n등의 곡률을 따라 적절한 지압", "rewrite_purpose": "개선된 방식의 장점 설명", "box": { "x": 514, "y": 690, "w": 396, "h": 124 }, "text_metrics": { "estimated_line_count": 3, "estimated_char_count": 36, "max_char_count_recommended": 40, "min_char_count_recommended": 30, "line_break_allowed": true } }
+  ],
+  "full_text_for_reference": [
+    "11번의 리뉴얼, 독자적인 기술 개발···",
+    "끊임없는 시도 끝에 이 모든 고민을",
+    "전부 해결했습니다!",
+    "첫번째",
+    "부드러운 360° 회전",
+    "와이라로만 움직임 / 마사지 범위가 좁음 / 압의 세기가 고르지 않음",
+    "자체개발로 부드럽게 360도 회전 / 마사지 범위가 넓음 / 등의 곡률을 따라 적절한 지압"
+  ]
+}

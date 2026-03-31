@@ -1,0 +1,159 @@
+﻿{
+  "section_id": "A_004",
+  "source": "A",
+  "slot": 2,
+  "role": "PRODUCT_INTRO",
+  "canvas": {
+    "width": 860,
+    "height": 1610
+  },
+  "copy_strategy": {
+    "goal": "원문 텍스트를 비슷한 길이와 줄수로 변형해 같은 위치 박스에 다시 넣기",
+    "global_rules": [
+      "원문보다 글자수가 크게 늘어나지 않도록 유지",
+      "한 줄 텍스트는 가능하면 한 줄 유지",
+      "영문 라벨은 영문 또는 짧은 브랜드형 라벨로 유지",
+      "모델명/숫자 라벨은 동일한 길이대 유지"
+    ]
+  },
+  "text_blocks": [
+    {
+      "id": "brand_1",
+      "kind": "label",
+      "original_text": "INSIDY",
+      "rewrite_purpose": "브랜드 또는 라인명 치환",
+      "box": { "x": 670, "y": 118, "w": 120, "h": 28 },
+      "typography": {
+        "font_family_guess": "Pretendard or similar geometric sans",
+        "font_family_css": "'Pretendard', 'Noto Sans KR', 'Malgun Gothic', sans-serif",
+        "font_style_notes": "bold geometric sans, clean tracking",
+        "font_size": 22,
+        "font_weight": 700,
+        "line_height": 1.0,
+        "letter_spacing": -0.6,
+        "align": "left",
+        "color": "#2e3139"
+      },
+      "container_style": {
+        "background_color": "transparent",
+        "border_radius": 0,
+        "padding_css": "0"
+      },
+      "text_metrics": {
+        "estimated_line_count": 1,
+        "estimated_char_count": 6,
+        "max_char_count_recommended": 8,
+        "min_char_count_recommended": 4,
+        "line_break_allowed": false
+      },
+      "rewrite_rule": "브랜드명 또는 짧은 라벨로 교체",
+      "length_rule": "영문 4~8자 권장",
+      "notes": "우측 상단에 작게 배치된 브랜드 라벨"
+    },
+    {
+      "id": "headline_en_1",
+      "kind": "headline",
+      "original_text": "MINI MASSAGE GUN",
+      "rewrite_purpose": "짧은 영문 제품군 라벨 치환",
+      "box": { "x": 410, "y": 340, "w": 334, "h": 40 },
+      "typography": {
+        "font_family_guess": "Pretendard or similar modern sans",
+        "font_family_css": "'Pretendard', 'Noto Sans KR', 'Malgun Gothic', sans-serif",
+        "font_style_notes": "all caps sans, medium-heavy weight",
+        "font_size": 30,
+        "font_weight": 700,
+        "line_height": 1.1,
+        "letter_spacing": -0.5,
+        "align": "left",
+        "color": "#2f323a"
+      },
+      "container_style": {
+        "background_color": "transparent",
+        "border_radius": 0,
+        "padding_css": "0"
+      },
+      "text_metrics": {
+        "estimated_line_count": 1,
+        "estimated_char_count": 17,
+        "max_char_count_recommended": 20,
+        "min_char_count_recommended": 12,
+        "line_break_allowed": false
+      },
+      "rewrite_rule": "짧은 영문 제품군 라벨로 변형",
+      "length_rule": "영문 12~20자 권장",
+      "notes": "한 줄 영문 라벨, 줄바꿈 생기면 배치 깨짐"
+    },
+    {
+      "id": "headline_ko_1",
+      "kind": "headline",
+      "original_text": "미니 마사지건",
+      "rewrite_purpose": "핵심 제품명 치환",
+      "box": { "x": 444, "y": 392, "w": 320, "h": 64 },
+      "typography": {
+        "font_family_guess": "Pretendard or similar bold sans",
+        "font_family_css": "'Pretendard', 'Noto Sans KR', 'Malgun Gothic', sans-serif",
+        "font_style_notes": "large bold Korean sans headline",
+        "font_size": 56,
+        "font_weight": 800,
+        "line_height": 1.0,
+        "letter_spacing": -2.0,
+        "align": "left",
+        "color": "#252a34"
+      },
+      "container_style": {
+        "background_color": "transparent",
+        "border_radius": 0,
+        "padding_css": "0"
+      },
+      "text_metrics": {
+        "estimated_line_count": 1,
+        "estimated_char_count": 7,
+        "max_char_count_recommended": 9,
+        "min_char_count_recommended": 5,
+        "line_break_allowed": false
+      },
+      "rewrite_rule": "핵심 제품명으로 변형",
+      "length_rule": "한글 5~9자 권장",
+      "notes": "메인 국문 제품명, 한 줄 유지 필수"
+    },
+    {
+      "id": "badge_1",
+      "kind": "badge",
+      "original_text": "IMG-300",
+      "rewrite_purpose": "모델명/숫자형 라벨 치환",
+      "box": { "x": 624, "y": 470, "w": 152, "h": 52 },
+      "typography": {
+        "font_family_guess": "Pretendard or similar sans",
+        "font_family_css": "'Pretendard', 'Noto Sans KR', 'Malgun Gothic', sans-serif",
+        "font_style_notes": "white bold text centered in dark rounded pill",
+        "font_size": 24,
+        "font_weight": 700,
+        "line_height": 1.0,
+        "letter_spacing": -0.4,
+        "align": "center",
+        "color": "#ffffff"
+      },
+      "container_style": {
+        "background_color": "#343846",
+        "border_radius": 26,
+        "padding_css": "12px 22px"
+      },
+      "text_metrics": {
+        "estimated_line_count": 1,
+        "estimated_char_count": 7,
+        "max_char_count_recommended": 10,
+        "min_char_count_recommended": 5,
+        "line_break_allowed": false
+      },
+      "rewrite_rule": "모델명/라인명/숫자형 라벨로 교체",
+      "length_rule": "영문+숫자 5~10자 권장",
+      "notes": "둥근 pill 내부 중앙정렬 텍스트"
+    }
+  ],
+  "full_text_for_reference": [
+    "INSIDY",
+    "MINI MASSAGE GUN",
+    "미니 마사지건",
+    "IMG-300"
+  ]
+}

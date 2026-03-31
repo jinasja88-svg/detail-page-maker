@@ -1,0 +1,35 @@
+﻿{
+  "section_id": "D_031",
+  "source": "D",
+  "slot": 7,
+  "role": "COMPARE",
+  "canvas": { "width": 800, "height": 905 },
+  "copy_strategy": {
+    "goal": "스펙 비교표의 헤드라인과 세대 라벨을 같은 박스에 맞춰 변형",
+    "global_rules": [
+      "상단 큰 헤드라인은 각 1줄 유지",
+      "세대 라벨은 1~2줄 유지",
+      "작은 원형 배지는 2줄 유지"
+    ]
+  },
+  "text_blocks": [
+    { "id": "headline_top_1", "kind": "headline", "original_text": "국내 유일, 독보적 스펙", "rewrite_purpose": "차별화 헤드라인", "box": { "x": 132, "y": 104, "w": 536, "h": 62 }, "text_metrics": { "estimated_line_count": 1, "estimated_char_count": 12, "max_char_count_recommended": 14, "min_char_count_recommended": 10, "line_break_allowed": false } },
+    { "id": "headline_top_2", "kind": "headline", "original_text": "5세대 커브건", "rewrite_purpose": "핵심 제품군 강조", "box": { "x": 202, "y": 178, "w": 396, "h": 84 }, "text_metrics": { "estimated_line_count": 1, "estimated_char_count": 8, "max_char_count_recommended": 10, "min_char_count_recommended": 6, "line_break_allowed": false } },
+    { "id": "col_1_title", "kind": "label", "original_text": "1세대", "rewrite_purpose": "비교 열 제목", "box": { "x": 20, "y": 343, "w": 114, "h": 54 }, "text_metrics": { "estimated_line_count": 1, "estimated_char_count": 3, "max_char_count_recommended": 4, "min_char_count_recommended": 3, "line_break_allowed": false } },
+    { "id": "col_2_title", "kind": "label", "original_text": "2세대", "rewrite_purpose": "비교 열 제목", "box": { "x": 136, "y": 343, "w": 114, "h": 54 }, "text_metrics": { "estimated_line_count": 1, "estimated_char_count": 3, "max_char_count_recommended": 4, "min_char_count_recommended": 3, "line_break_allowed": false } },
+    { "id": "col_3_title", "kind": "label", "original_text": "3세대", "rewrite_purpose": "비교 열 제목", "box": { "x": 252, "y": 343, "w": 114, "h": 54 }, "text_metrics": { "estimated_line_count": 1, "estimated_char_count": 3, "max_char_count_recommended": 4, "min_char_count_recommended": 3, "line_break_allowed": false } },
+    { "id": "col_4_title", "kind": "label", "original_text": "4세대\n커브건", "rewrite_purpose": "비교 열 제목", "box": { "x": 368, "y": 330, "w": 132, "h": 86 }, "text_metrics": { "estimated_line_count": 2, "estimated_char_count": 6, "max_char_count_recommended": 8, "min_char_count_recommended": 5, "line_break_allowed": true } },
+    { "id": "col_5_title", "kind": "label", "original_text": "5세대\n커브건", "rewrite_purpose": "메인 비교 열 제목", "box": { "x": 502, "y": 298, "w": 190, "h": 118 }, "text_metrics": { "estimated_line_count": 2, "estimated_char_count": 6, "max_char_count_recommended": 8, "min_char_count_recommended": 5, "line_break_allowed": true } },
+    { "id": "badge_new_1", "kind": "badge", "original_text": "2026\nNEW", "rewrite_purpose": "신규 배지", "box": { "x": 632, "y": 352, "w": 70, "h": 70 }, "text_metrics": { "estimated_line_count": 2, "estimated_char_count": 7, "max_char_count_recommended": 8, "min_char_count_recommended": 5, "line_break_allowed": true } }
+  ],
+  "full_text_for_reference": [
+    "국내 유일, 독보적 스펙",
+    "5세대 커브건",
+    "1세대",
+    "2세대",
+    "3세대",
+    "4세대 커브건",
+    "5세대 커브건",
+    "2026 NEW"
+  ]
+}

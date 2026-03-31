@@ -1,0 +1,30 @@
+﻿{
+  "section_id": "A_018",
+  "source": "A",
+  "slot": 11,
+  "role": "LIGHTWEIGHT",
+  "canvas": { "width": 860, "height": 1536 },
+  "copy_strategy": {
+    "goal": "경량 강조형 섹션의 헤드라인과 짧은 본문을 동일한 위계로 변형",
+    "global_rules": [
+      "상단 badge는 짧게 유지",
+      "헤드라인 2줄 구조 유지",
+      "본문은 2줄 유지",
+      "하단 큰 숫자 라벨은 동일 길이 유지"
+    ]
+  },
+  "text_blocks": [
+    { "id": "badge_1", "kind": "badge", "original_text": "POINT 05", "rewrite_purpose": "상단 짧은 포인트 라벨", "box": { "x": 350, "y": 82, "w": 160, "h": 46 }, "text_metrics": { "estimated_line_count": 1, "estimated_char_count": 8, "max_char_count_recommended": 9, "min_char_count_recommended": 6, "line_break_allowed": false } },
+    { "id": "headline_1", "kind": "headline", "original_text": "편안하고 가벼운 무게", "rewrite_purpose": "상단 설명 헤드라인", "box": { "x": 140, "y": 168, "w": 580, "h": 68 }, "text_metrics": { "estimated_line_count": 1, "estimated_char_count": 11, "max_char_count_recommended": 13, "min_char_count_recommended": 9, "line_break_allowed": false } },
+    { "id": "headline_2", "kind": "headline", "original_text": "초경량 390g", "rewrite_purpose": "핵심 숫자 강조 헤드라인", "box": { "x": 214, "y": 246, "w": 432, "h": 70 }, "text_metrics": { "estimated_line_count": 1, "estimated_char_count": 8, "max_char_count_recommended": 9, "min_char_count_recommended": 6, "line_break_allowed": false } },
+    { "id": "body_1", "kind": "body", "original_text": "390g 초경량의 부담없는 설계로\n한 손으로도 편하게 사용 가능합니다.", "rewrite_purpose": "설명 본문", "box": { "x": 188, "y": 362, "w": 484, "h": 92 }, "text_metrics": { "estimated_line_count": 2, "estimated_char_count": 27, "max_char_count_recommended": 30, "min_char_count_recommended": 22, "line_break_allowed": true } },
+    { "id": "weight_bg_1", "kind": "label", "original_text": "390g", "rewrite_purpose": "하단 배경 숫자 라벨", "box": { "x": 192, "y": 1174, "w": 476, "h": 120 }, "text_metrics": { "estimated_line_count": 1, "estimated_char_count": 4, "max_char_count_recommended": 5, "min_char_count_recommended": 3, "line_break_allowed": false } }
+  ],
+  "full_text_for_reference": [
+    "POINT 05",
+    "편안하고 가벼운 무게",
+    "초경량 390g",
+    "390g 초경량의 부담없는 설계로 / 한 손으로도 편하게 사용 가능합니다.",
+    "390g"
+  ]
+}

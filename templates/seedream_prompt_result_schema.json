@@ -1,0 +1,68 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "section_id",
+    "focus_branch",
+    "image_ratio",
+    "analysis",
+    "prompts"
+  ],
+  "properties": {
+    "section_id": { "type": "string" },
+    "focus_branch": {
+      "type": "string",
+      "enum": ["OBJECT", "PERSON", "WHOLE_IMAGE"]
+    },
+    "image_ratio": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["width", "height", "ratio_text"],
+      "properties": {
+        "width": { "type": "integer", "minimum": 1 },
+        "height": { "type": "integer", "minimum": 1 },
+        "ratio_text": { "type": "string" }
+      }
+    },
+    "analysis": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "type_label",
+        "camera_angle",
+        "main_subject",
+        "background",
+        "composition",
+        "lighting",
+        "mood",
+        "post_processing"
+      ],
+      "properties": {
+        "type_label": { "type": "string" },
+        "camera_angle": { "type": "string" },
+        "main_subject": { "type": "string" },
+        "background": { "type": "string" },
+        "composition": { "type": "string" },
+        "lighting": { "type": "string" },
+        "mood": { "type": "string" },
+        "post_processing": { "type": "string" },
+        "visible_interaction": { "type": "string" },
+        "color_notes": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "wardrobe_or_hand_notes": { "type": "string" }
+      }
+    },
+    "prompts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["english", "korean"],
+      "properties": {
+        "english": { "type": "string" },
+        "korean": { "type": "string" }
+      }
+    }
+  }
+}
